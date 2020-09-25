@@ -6,71 +6,152 @@
 ** below.
 ------------------------------*/
 @font-face {
-  font-family: 'Ciutadella';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/assets/fonts/Ciutadella-W04-Lt.woff') format('woff')
+    font-family: "Ciutadella";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/assets/fonts/Ciutadella-W04-Lt.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Ciutadella';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/assets/fonts/Ciutadella-W04-Reg.woff') format('woff')
+    font-family: "Ciutadella";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/Ciutadella-W04-Reg.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Ciutadella';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/assets/fonts/Ciutadella-W04-Medium.woff') format('woff')
+    font-family: "Ciutadella";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/assets/fonts/Ciutadella-W04-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Ciutadella';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/assets/fonts/Ciutadella-W04-Bold.woff') format('woff')
+    font-family: "Ciutadella";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/Ciutadella-W04-Bold.woff") format("woff");
 }
 
 html {
-  font-size: 18px;
-  font-family: 'Ciutadella', sans-serif;
-  color: $neutral_color_extra-dark;
+    font-size: 18px;
+    font-family: "Ciutadella", sans-serif;
+    color: $neutral_color_extra-dark;
 }
 
-h1, h2, h3, h4, h5, h6, .heading { 
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  color: $neutral_color_extra_dark;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: $neutral_color_extra_dark;
 }
 
-a { color: $primary_color_dark; }
-a:hover { color: $primary_color_extra_dark; }
+.body {
+    font-family: "Ciutadella", sans-serif;
+}
 
-@mixin text--xs { font-size: 0.75rem; line-height: 1.7; letter-spacing: 1px; margin-bottom: 0.8em; }
-@mixin text--sm { font-size: 0.775rem; line-height: 1.7; letter-spacing: 0.25px; margin-bottom: 0.8em; }
-@mixin text--base { font-size: 1rem; line-height: 1.7; letter-spacing: 0.25px; margin-bottom: 0.8em; }
-@mixin text--md { font-size: 1.125rem; line-height: 1.6; letter-spacing: 0.15px; margin-bottom: 0.45em; }
-@mixin text--lg { font-size: 1.55rem; line-height: 1.25; margin-bottom: 0.35em; }
-@mixin text--xl { font-size: 1.66rem; line-height: 1.3; letter-spacing: 0.25px; margin-bottom: 0.25em; }
-@mixin text--2xl { font-size: 2.25rem; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 0.25em; }
-@mixin text--3xl { font-size: 2.66rem; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 0.25em; }
-@mixin text--4xl { font-size: 6rem; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 0.25em; }
+a {
+    color: $primary_color_dark;
+    text-decoration: none;
+}
+a:hover {
+    color: $primary_color_extra_dark;
+}
+
+@mixin text--xs {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin-bottom: 0.8em;
+}
+@mixin text--sm {
+    font-size: 0.775rem;
+    line-height: 1.7;
+    letter-spacing: 0.25px;
+    margin-bottom: 0.8em;
+}
+@mixin text--base {
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.25px;
+    margin-bottom: 0.8em;
+}
+@mixin text--md {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    letter-spacing: 0.15px;
+    margin-bottom: 0.45em;
+}
+@mixin text--lg {
+    font-size: 1.55rem;
+    line-height: 1.25;
+    margin-bottom: 0.35em;
+}
+@mixin text--xl {
+    font-size: 1.66rem;
+    line-height: 1.3;
+    letter-spacing: 0.25px;
+    margin-bottom: 0.25em;
+}
+@mixin text--2xl {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.25em;
+}
+@mixin text--3xl {
+    font-size: 2.66rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.25em;
+}
+@mixin text--4xl {
+    font-size: 6rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.25em;
+}
 
 /*------------------------------
 ** DEFAULT BOTTOM MARGIN
 ------------------------------*/
-h1 { margin-bottom: 0.25em; }
-h2 { margin-bottom: 0.35em; }
-h3 { margin-bottom: 0.45em; }
-h4 { margin-bottom: 0.55em; }
-h5 { margin-bottom: 0.65em; }
-h6, p { margin-bottom: 0.8em; }
+h1 {
+    margin-bottom: 0.25em;
+}
+h2 {
+    margin-bottom: 0.35em;
+}
+h3 {
+    margin-bottom: 0.45em;
+}
+h4 {
+    margin-bottom: 0.55em;
+}
+h5 {
+    margin-bottom: 0.65em;
+}
+h6,
+p {
+    margin-bottom: 0.8em;
+}
 
-label, input, select, textarea { @include text--base; }
-input, select, textarea { margin-bottom: 0; }
+label,
+input,
+select,
+textarea {
+    @include text--base;
+}
+input,
+select,
+textarea {
+    margin-bottom: 0;
+}

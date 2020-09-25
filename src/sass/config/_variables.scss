@@ -14,7 +14,7 @@ $xxl_device: 1440px;
 ** paddings and flex columns
 ------------------------------*/
 $grid_unit: 4px;
-$grid_gap: $grid_unit * 5; 
+$grid_gap: $grid_unit * 7;
 $sm__grid_gap: $grid_unit * 7;
 $md__grid_gap: $grid_unit * 9;
 $lg__grid_gap: $grid_unit * 10;
@@ -22,50 +22,50 @@ $xl__grid_gap: $grid_unit * 12;
 $xxl__grid_gap: $grid_unit * 14;
 
 $grid_units: (
-  "0": 0,
-  "1": 1,
-  "2": 2,
-  "3": 3,
-  "4": 4,
-  "5": 5,
-  "6": 6,
-  "7": 7,
-  "8": 8,
-  "9": 9,
-  "10": 10,
-  "12": 12,
-  "15": 15,
-  "20": 20,
-  "25": 25
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "12": 12,
+    "15": 15,
+    "20": 20,
+    "25": 25,
 );
 
 /*------------------------------
 ** COLOURS
 ------------------------------*/
-$primary_color_extra_light: #EBF4FF;
-$primary_color_light: #A3BFFA;
-$primary_color: #667EEA;
+$primary_color_extra_light: #ebf4ff;
+$primary_color_light: #a3bffa;
+$primary_color: #667eea;
 // up remove
-$primary_color_dark: #510C7B;
-$primary_color_extra_dark: #33084D;
+$primary_color_dark: #510c7b;
+$primary_color_extra_dark: #33084d;
 
-$secondary_color_extra_light: #E6FFFA;
-$secondary_color_light: #81E6D9;
+$secondary_color_extra_light: #e6fffa;
+$secondary_color_light: #81e6d9;
 // up remove
-$secondary_color: #FC1369;
+$secondary_color: #fc1369;
+$secondary_color_dark: #ad0d49;
 //down remove
-$secondary_color_dark: #2C7A7B;
-$secondary_color_extra_dark: #234E52;
+$secondary_color_extra_dark: #234e52;
 
 //remove accent
-$accent_color_extra_light: #FFF5F7;
-$accent_color_light: #FBB6CE;
-$accent_color: #ED64A6;
-$accent_color_dark: #B83280;
+$accent_color_extra_light: #fff5f7;
+$accent_color_light: #fbb6ce;
+$accent_color: #ed64a6;
+$accent_color_dark: #b83280;
 $accent_color_extra_dark: #702459;
 
-$neutral_color_extra_light: #F4F4F4;
-$neutral_color_light: #E2E8F0; // remove
+$neutral_color_extra_light: #f4f4f4;
+$neutral_color_light: #e2e8f0; // remove
 $neutral_color: #808080;
-$neutral_color_dark: #4A5568; // remove
-$neutral_color_extra_dark: #1C1D1E;
+$neutral_color_dark: #4a5568; // remove
+$neutral_color_extra_dark: #1c1d1e;
