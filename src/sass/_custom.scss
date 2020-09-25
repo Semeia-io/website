@@ -5,12 +5,21 @@
 ** This will make it easy
 ** to update in the future
 ------------------------------*/
+button {
+    font-size: 1rem; // this is used for toggles in dropdowns
+    font-family: inherit;
+}
+
 .button-tertiary {
     @extend .button-secondary;
     background-color: $primary_color_extra_dark;
 }
 
-.wrapper--with-padding {
+button {
+    outline: none;
+}
+
+.add-padding {
     // used when children are not a flex or grid to get even padding
     padding-left: $grid_gap / 2;
     padding-right: $grid_gap / 2;

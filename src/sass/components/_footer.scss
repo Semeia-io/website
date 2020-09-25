@@ -1,0 +1,16 @@
+footer {
+    background-color: $primary_color_dark;
+}
+
+.footer__logo {
+    width: 150px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $lg_device) {
+        margin: 0;
+    }
+}
+
+.footer__social-icons {
+    margin-top: auto;
+}
