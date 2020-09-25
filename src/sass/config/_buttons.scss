@@ -1,0 +1,25 @@
+// Typography
+$button_font_size: 1rem;
+$large_button_font_size: 1rem;
+$button_font_weight: 600;
+$button_letter_spacing: 0.3px;
+
+// Shape
+$button_min_width: 150px;
+$button_height: 57px;
+
+$large_button_min_width: 250px;
+$large_button_height: 60px;
+
+$border_width: 1px;
+$button_border_radius: 4px;
+
+// Primary Button Colors
+$primary_button_bg_color: $secondary_color;
+$primary_button_bg_color_on_hover: $primary_color_dark;
+$primary_button_text_color: #fff;
+
+// Secondary Button Colors
+$secondary_button_bg_color: $neutral_color;
+$secondary_button_bg_color_on_hover: $neutral_color_extra_dark;
+$secondary_button_text_color: #fff;

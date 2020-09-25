@@ -1,0 +1,22 @@
+@import 'globals/normalize';
+
+@import 'config/variables';
+@import 'config/typography';
+@import 'config/buttons';
+
+@import 'globals/layout';
+@import 'globals/flex';
+@import 'globals/flex_cols';
+@import 'globals/grid';
+@import 'globals/typography';
+@import 'globals/margins';
+@import 'globals/paddings';
+@import 'globals/buttons';
+@import 'globals/forms';
+@import 'globals/aspect_ratio';
+
+/*------------------------------
+** ADD IMPORTS HERE IF NEEDED
+------------------------------*/
+@import 'globals/text_color';
+@import 'custom';

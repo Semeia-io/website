@@ -1,0 +1,121 @@
+@mixin text--left { text-align: left; }
+@mixin text--center { text-align: center; }
+@mixin text--right { text-align: right; }
+
+/*------------------------------
+** FONT WEIGHT
+------------------------------*/
+.bold { font-weight: 700; }
+.semibold { font-weight: 600; }
+.regular { font-weight: 400; }
+.light { font-weight: 300;}
+
+/*------------------------------
+** ALIGNMENT
+------------------------------*/
+.text--left { @include text--left; }
+.text--center { @include text--center; }
+.text--right { @include text--right; }
+
+@media screen and (min-width: $sm_device) {
+  .sm__text--left { @include text--left; }
+  .sm__text--center { @include text--center; }
+  .sm__text--right { @include text--right; }
+}
+
+@media screen and (min-width: $md_device) {
+  .md__text--left { @include text--left; }
+  .md__text--center { @include text--center; }
+  .md__text--right { @include text--right; }
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__text--left { @include text--left; }
+  .lg__text--center { @include text--center; }
+  .lg__text--right { @include text--right; }
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__text--left { @include text--left; }
+  .xl__text--center { @include text--center; }
+  .xl__text--right { @include text--right; }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__text--left { @include text--left; }
+  .xxl__text--center { @include text--center; }
+  .xxl__text--right { @include text--right; }
+}
+
+/*------------------------------
+** SIZING
+------------------------------*/
+.text--xs { @include text--xs; }
+.text--sm { @include text--sm; }
+.text--base, p { @include text--base; }
+.text--md { @include text--md; }
+.text--lg { @include text--lg; }
+.text--xl { @include text--xl; }
+.text--2xl { @include text--2xl; }
+.text--3xl { @include text--3xl; }
+.text--4xl { @include text--4xl; }
+
+@media screen and (min-width: $sm_device) {
+  .sm__text--xs { @include text--xs; }
+  .sm__text--sm { @include text--sm; }
+  .sm__text--base, p { @include text--base; }
+  .sm__text--md { @include text--md; }
+  .sm__text--lg { @include text--lg; }
+  .sm__text--xl { @include text--xl; }
+  .sm__text--2xl { @include text--2xl; }
+  .sm__text--3xl { @include text--3xl; }
+  .sm__text--4xl { @include text--4xl; }
+}
+
+@media screen and (min-width: $md_device) {
+  .md__text--xs { @include text--xs; }
+  .md__text--sm { @include text--sm; }
+  .md__text--base, p { @include text--base; }
+  .md__text--md { @include text--md; }
+  .md__text--lg { @include text--lg; }
+  .md__text--xl { @include text--xl; }
+  .md__text--2xl { @include text--2xl; }
+  .md__text--3xl { @include text--3xl; }
+  .md__text--4xl { @include text--4xl; }
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__text--xs { @include text--xs; }
+  .lg__text--sm { @include text--sm; }
+  .lg__text--base, p { @include text--base; }
+  .lg__text--md { @include text--md; }
+  .lg__text--lg { @include text--lg; }
+  .lg__text--xl { @include text--xl; }
+  .lg__text--2xl { @include text--2xl; }
+  .lg__text--3xl { @include text--3xl; }
+  .lg__text--4xl { @include text--4xl; }
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__text--xs { @include text--xs; }
+  .xl__text--sm { @include text--sm; }
+  .xl__text--base, p { @include text--base; }
+  .xl__text--md { @include text--md; }
+  .xl__text--lg { @include text--lg; }
+  .xl__text--xl { @include text--xl; }
+  .xl__text--2xl { @include text--2xl; }
+  .xl__text--3xl { @include text--3xl; }
+  .xl__text--4xl { @include text--4xl; }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__text--xs { @include text--xs; }
+  .xxl__text--sm { @include text--sm; }
+  .xxl__text--base, p { @include text--base; }
+  .xxl__text--md { @include text--md; }
+  .xxl__text--lg { @include text--lg; }
+  .xxl__text--xl { @include text--xl; }
+  .xxl__text--2xl { @include text--2xl; }
+  .xxl__text--3xl { @include text--3xl; }
+  .xxl__text--4xl { @include text--4xl; }
+}

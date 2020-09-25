@@ -1,0 +1,71 @@
+/*------------------------------
+** BREAKPOINTS
+------------------------------*/
+$sm_device: 500px;
+$md_device: 768px;
+$lg_device: 1024px;
+$xl_device: 1280px;
+$xxl_device: 1440px;
+
+/*------------------------------
+** SPACING
+** Besides effecting grid gap,
+** this also effects margins,
+** paddings and flex columns
+------------------------------*/
+$grid_unit: 4px;
+$grid_gap: $grid_unit * 5; 
+$sm__grid_gap: $grid_unit * 7;
+$md__grid_gap: $grid_unit * 9;
+$lg__grid_gap: $grid_unit * 10;
+$xl__grid_gap: $grid_unit * 12;
+$xxl__grid_gap: $grid_unit * 14;
+
+$grid_units: (
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "7": 7,
+  "8": 8,
+  "9": 9,
+  "10": 10,
+  "12": 12,
+  "15": 15,
+  "20": 20,
+  "25": 25
+);
+
+/*------------------------------
+** COLOURS
+------------------------------*/
+$primary_color_extra_light: #EBF4FF;
+$primary_color_light: #A3BFFA;
+$primary_color: #667EEA;
+// up remove
+$primary_color_dark: #510C7B;
+$primary_color_extra_dark: #33084D;
+
+$secondary_color_extra_light: #E6FFFA;
+$secondary_color_light: #81E6D9;
+// up remove
+$secondary_color: #FC1369;
+//down remove
+$secondary_color_dark: #2C7A7B;
+$secondary_color_extra_dark: #234E52;
+
+//remove accent
+$accent_color_extra_light: #FFF5F7;
+$accent_color_light: #FBB6CE;
+$accent_color: #ED64A6;
+$accent_color_dark: #B83280;
+$accent_color_extra_dark: #702459;
+
+$neutral_color_extra_light: #F4F4F4;
+$neutral_color_light: #E2E8F0; // remove
+$neutral_color: #808080;
+$neutral_color_dark: #4A5568; // remove
+$neutral_color_extra_dark: #1C1D1E;

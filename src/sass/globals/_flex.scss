@@ -1,0 +1,250 @@
+// FLEX
+@mixin flex { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap;}
+@mixin flex--no-wrap { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap;}
+@mixin flex--reverse { width: 100%; display: flex; flex-direction: row-reverse; flex-wrap: wrap; }
+@mixin flex--reverse-no-wrap { width: 100%; display: flex; flex-direction: row-reverse; flex-wrap: nowrap; }
+@mixin flex--column { width: 100%; display: flex; flex-direction: column; flex-wrap: wrap; }
+@mixin flex--column-no-wrap { width: 100%; display: flex; flex-direction: column; flex-wrap: nowrap; }
+@mixin flex--column-reverse { width: 100%; display: flex; flex-direction: column-reverse; flex-wrap: wrap; }
+@mixin flex--column-reverse-no-wrap { width: 100%; display: flex; flex-direction: column-reverse; flex-wrap: nowrap; }
+
+// JUSTIFY CONTENT
+@mixin justify--start { justify-content: flex-start; }
+@mixin justify--end { justify-content: flex-end; }
+@mixin justify--center { justify-content: center; }
+@mixin justify--between { justify-content: space-between; }
+@mixin justify--around { justify-content: space-around; }
+
+// ALIGN ITEMS
+@mixin align--start { align-items: flex-start; }
+@mixin align--end { align-items: flex-end; }
+@mixin align--center { align-items: center; }
+@mixin align--baseline { align-items: baseline;; }
+@mixin align--stretch { align-items:  stretch;; }
+
+// ALIGN SELF
+@mixin align-self--start { align-self: flex-start; }
+@mixin align-self--end { align-self: flex-end; }
+@mixin align-self--center { align-self: center; }
+@mixin align-self--baseline { align-self: baseline;; }
+@mixin align-self--stretch { align-self:  stretch;; }
+
+.flex {
+  @include flex;
+  &--no-wrap { @include flex--no-wrap; }
+  &--reverse { @include flex--reverse; }
+  &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+  &--column { @include flex--column; }
+  &--column-no-wrap { @include flex--column-no-wrap; }
+  &--column-reverse { @include flex--column-reverse; }
+  &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+}
+
+.justify {
+  &--start { @include justify--start; }
+  &--end { @include justify--end; }
+  &--center { @include justify--center; }
+  &--around { @include justify--around; }
+  &--between { @include justify--between; }
+}
+
+.align {
+  &--start { @include align--start; }
+  &--end { @include align--end; }
+  &--center { @include align--center; }
+  &--baseline { @include align--baseline; }
+  &--stretch { @include align--stretch; }
+}
+
+.align-self {
+  &--start { @include align-self--start; }
+  &--end { @include align-self--end; }
+  &--center { @include align-self--center; }
+  &--baseline { @include align-self--baseline; }
+  &--stretch { @include align-self--stretch; }
+}
+
+@media screen and (min-width: $sm_device) {
+  .sm__flex {
+    @include flex;
+    &--no-wrap { @include flex--no-wrap; }
+    &--reverse { @include flex--reverse; }
+    &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+    &--column { @include flex--column; }
+    &--column-no-wrap { @include flex--column-no-wrap; }
+    &--column-reverse { @include flex--column-reverse; }
+    &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+  }
+
+  .sm__justify {
+    &--start { @include justify--start; }
+    &--end { @include justify--end; }
+    &--center { @include justify--center; }
+    &--around { @include justify--around; }
+    &--between { @include justify--between; }
+  }
+
+  .sm__align {
+    &--start { @include align--start; }
+    &--end { @include align--end; }
+    &--center { @include align--center; }
+    &--baseline { @include align--baseline; }
+    &--stretch { @include align--stretch; }
+  }
+
+  .sm__align-self {
+    &--start { @include align-self--start; }
+    &--end { @include align-self--end; }
+    &--center { @include align-self--center; }
+    &--baseline { @include align-self--baseline; }
+    &--stretch { @include align-self--stretch; }
+  }
+}
+
+@media screen and (min-width: $md_device) {
+  .md__flex {
+    @include flex;
+    &--no-wrap { @include flex--no-wrap; }
+    &--reverse { @include flex--reverse; }
+    &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+    &--column { @include flex--column; }
+    &--column-no-wrap { @include flex--column-no-wrap; }
+    &--column-reverse { @include flex--column-reverse; }
+    &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+  }
+
+  .md__justify {
+    &--start { @include justify--start; }
+    &--end { @include justify--end; }
+    &--center { @include justify--center; }
+    &--around { @include justify--around; }
+    &--between { @include justify--between; }
+  }
+
+  .md__align {
+    &--start { @include align--start; }
+    &--end { @include align--end; }
+    &--center { @include align--center; }
+    &--baseline { @include align--baseline; }
+    &--stretch { @include align--stretch; }
+  }
+
+  .md__align-self {
+    &--start { @include align-self--start; }
+    &--end { @include align-self--end; }
+    &--center { @include align-self--center; }
+    &--baseline { @include align-self--baseline; }
+    &--stretch { @include align-self--stretch; }
+  }
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__flex {
+    @include flex;
+    &--no-wrap { @include flex--no-wrap; }
+    &--reverse { @include flex--reverse; }
+    &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+    &--column { @include flex--column; }
+    &--column-no-wrap { @include flex--column-no-wrap; }
+    &--column-reverse { @include flex--column-reverse; }
+    &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+  }
+
+  .lg__justify {
+    &--start { @include justify--start; }
+    &--end { @include justify--end; }
+    &--center { @include justify--center; }
+    &--around { @include justify--around; }
+    &--between { @include justify--between; }
+  }
+
+  .lg__align {
+    &--start { @include align--start; }
+    &--end { @include align--end; }
+    &--center { @include align--center; }
+    &--baseline { @include align--baseline; }
+    &--stretch { @include align--stretch; }
+  }
+
+  .lg__align-self {
+    &--start { @include align-self--start; }
+    &--end { @include align-self--end; }
+    &--center { @include align-self--center; }
+    &--baseline { @include align-self--baseline; }
+    &--stretch { @include align-self--stretch; }
+  }
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__flex {
+    @include flex;
+    &--no-wrap { @include flex--no-wrap; }
+    &--reverse { @include flex--reverse; }
+    &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+    &--column { @include flex--column; }
+    &--column-no-wrap { @include flex--column-no-wrap; }
+    &--column-reverse { @include flex--column-reverse; }
+    &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+  }
+
+  .xl__justify {
+    &--start { @include justify--start; }
+    &--end { @include justify--end; }
+    &--center { @include justify--center; }
+    &--around { @include justify--around; }
+    &--between { @include justify--between; }
+  }
+
+  .xl__align {
+    &--start { @include align--start; }
+    &--end { @include align--end; }
+    &--center { @include align--center; }
+    &--baseline { @include align--baseline; }
+    &--stretch { @include align--stretch; }
+  }
+
+  .xl__align-self {
+    &--start { @include align-self--start; }
+    &--end { @include align-self--end; }
+    &--center { @include align-self--center; }
+    &--baseline { @include align-self--baseline; }
+    &--stretch { @include align-self--stretch; }
+  }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__flex {
+    @include flex;
+    &--no-wrap { @include flex--no-wrap; }
+    &--reverse { @include flex--reverse; }
+    &--reverse-no-wrap { @include flex--reverse-no-wrap; }
+    &--column { @include flex--column; }
+    &--column-no-wrap { @include flex--column-no-wrap; }
+    &--column-reverse { @include flex--column-reverse; }
+    &--column-reverse-no-wrap { @include flex--column-reverse-no-wrap; }
+  }
+
+  .xxl__justify {
+    &--start { @include justify--start; }
+    &--end { @include justify--end; }
+    &--center { @include justify--center; }
+    &--around { @include justify--around; }
+    &--between { @include justify--between; }
+  }
+
+  .xxl__align {
+    &--start { @include align--start; }
+    &--end { @include align--end; }
+    &--center { @include align--center; }
+    &--baseline { @include align--baseline; }
+    &--stretch { @include align--stretch; }
+  }
+
+  .xxl__align-self {
+    &--start { @include align-self--start; }
+    &--end { @include align-self--end; }
+    &--center { @include align-self--center; }
+    &--baseline { @include align-self--baseline; }
+    &--stretch { @include align-self--stretch; }
+  }
+}

@@ -1,0 +1,56 @@
+@mixin button--base {
+  font-weight: $button_font_weight;
+  font-size: $button_font_size;
+  text-decoration: none;
+  text-align: center;
+  line-height: $button_height;
+  letter-spacing: $button_letter_spacing;
+
+  display: inline-block;
+  min-width: $button_min_width;
+  height: $button_height;
+  padding: 0 $grid_gap / 2;
+  border-radius: $button_border_radius;
+
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin button--large {
+  @include button--base;
+  font-size: $large_button_font_size;
+  min-width: $large_button_min_width;
+  height: $large_button_height;
+  line-height: $large_button_height;
+}
+
+@mixin button--solid($default_bg, $hover_bg, $text_color) {
+  color: $text_color;
+  background-color: $default_bg;
+  border: $border_width solid $default_bg;
+
+  &:hover {
+    color: $text_color;
+    background-color: $hover_bg;
+    border: $border_width solid $hover_bg;
+  }
+}
+
+@mixin button--outline($border_color, $hover_text_color) {
+  color: $border_color;
+  border: $border_width solid $border_color;
+
+  &:hover {
+    background-color: $border_color;
+    color: $hover_text_color;
+  }
+}
+
+.button-primary { @include button--base; @include button--solid($primary_button_bg_color, $primary_button_bg_color_on_hover, $primary_button_text_color); }
+.button-primary--lg { @include button--large; @include button--solid($primary_button_bg_color, $primary_button_bg_color_on_hover, $primary_button_text_color); }
+.button-primary--outline { @include button--base; @include button--outline($primary_button_bg_color, $primary_button_text_color); }
+.button-primary--outline-lg { @include button--large; @include button--outline($primary_button_bg_color, $primary_button_text_color); }
+
+.button-secondary { @include button--base; @include button--solid($secondary_button_bg_color, $secondary_button_bg_color_on_hover, $secondary_button_text_color); }
+.button-secondary--lg { @include button--large; @include button--solid($secondary_button_bg_color, $secondary_button_bg_color_on_hover, $secondary_button_text_color); }
+.button-secondary--outline { @include button--base; @include button--outline($secondary_button_bg_color, $secondary_button_text_color); }
+.button-secondary--outline-lg { @include button--large; @include button--outline($secondary_button_bg_color, $secondary_button_text_color); }

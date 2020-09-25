@@ -1,0 +1,73 @@
+@each $name, $value in $grid_units {
+  .padding--#{$name } { padding: $value * $grid_unit; }
+  .padding--top-#{$name } { padding-top: $value * $grid_unit; }
+  .padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+  .padding--left-#{$name } { padding-left: $value * $grid_unit; }
+  .padding--right-#{$name } { padding-right: $value * $grid_unit; }
+  .padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+  .padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+}
+
+
+@media screen and (min-width: $sm_device) {
+  @each $name, $value in $grid_units {
+    .sm__padding--#{$name } { padding: $value * $grid_unit; }
+    .sm__padding--top-#{$name } { padding-top: $value * $grid_unit; }
+    .sm__padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+    .sm__padding--left-#{$name } { padding-left: $value * $grid_unit; }
+    .sm__padding--right-#{$name } { padding-right: $value * $grid_unit; }
+    .sm__padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+    .sm__padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $md_device) {
+  @each $name, $value in $grid_units {
+    .md__padding--#{$name } { padding: $value * $grid_unit; }
+    .md__padding--top-#{$name } { padding-top: $value * $grid_unit; }
+    .md__padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+    .md__padding--left-#{$name } { padding-left: $value * $grid_unit; }
+    .md__padding--right-#{$name } { padding-right: $value * $grid_unit; }
+    .md__padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+    .md__padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $lg_device) {
+  @each $name, $value in $grid_units {
+    .lg__padding--#{$name } { padding: $value * $grid_unit; }
+    .lg__padding--top-#{$name } { padding-top: $value * $grid_unit; }
+    .lg__padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+    .lg__padding--left-#{$name } { padding-left: $value * $grid_unit; }
+    .lg__padding--right-#{$name } { padding-right: $value * $grid_unit; }
+    .lg__padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+    .lg__padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $xl_device) {
+  @each $name, $value in $grid_units {
+    .xl__padding--#{$name } { padding: $value * $grid_unit; }
+    .xl__padding--top-#{$name } { padding-top: $value * $grid_unit; }
+    .xl__padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+    .xl__padding--left-#{$name } { padding-left: $value * $grid_unit; }
+    .xl__padding--right-#{$name } { padding-right: $value * $grid_unit; }
+    .xl__padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+    .xl__padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+  }
+}
+
+@media screen and (min-width: $xxl_device) {
+  @each $name, $value in $grid_units {
+    .xxl__padding--#{$name } { padding: $value * $grid_unit; }
+    .xxl__padding--top-#{$name } { padding-top: $value * $grid_unit; }
+    .xxl__padding--bottom-#{$name } { padding-bottom: $value * $grid_unit; }
+    .xxl__padding--left-#{$name } { padding-left: $value * $grid_unit; }
+    .xxl__padding--right-#{$name } { padding-right: $value * $grid_unit; }
+    .xxl__padding--x-#{$name } { padding-left: $value * $grid_unit; padding-right: $value * $grid_unit; }
+    .xxl__padding--y-#{$name } { padding-top: $value * $grid_unit; padding-bottom: $value * $grid_unit; }
+  }
+}

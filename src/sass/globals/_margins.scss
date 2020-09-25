@@ -1,0 +1,86 @@
+.margin--x-auto { margin-left: auto; margin-right: auto; }
+
+@each $name, $value in $grid_units {
+  .margin--#{$name } { margin: $value * $grid_unit; }
+  .margin--top-#{$name } { margin-top: $value * $grid_unit; }
+  .margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+  .margin--left-#{$name } { margin-left: $value * $grid_unit; }
+  .margin--right-#{$name } { margin-right: $value * $grid_unit; }
+  .margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+  .margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+}
+
+
+
+@media screen and (min-width: $sm_device) {
+  .sm__margin--x-auto { margin-left: auto; margin-right: auto; }
+
+  @each $name, $value in $grid_units {
+    .sm__margin--#{$name } { margin: $value * $grid_unit; }
+    .sm__margin--top-#{$name } { margin-top: $value * $grid_unit; }
+    .sm__margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+    .sm__margin--left-#{$name } { margin-left: $value * $grid_unit; }
+    .sm__margin--right-#{$name } { margin-right: $value * $grid_unit; }
+    .sm__margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+    .sm__margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $md_device) {
+  .md__margin--x-auto { margin-left: auto; margin-right: auto; }
+
+  @each $name, $value in $grid_units {
+    .md__margin--#{$name } { margin: $value * $grid_unit; }
+    .md__margin--top-#{$name } { margin-top: $value * $grid_unit; }
+    .md__margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+    .md__margin--left-#{$name } { margin-left: $value * $grid_unit; }
+    .md__margin--right-#{$name } { margin-right: $value * $grid_unit; }
+    .md__margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+    .md__margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $lg_device) {
+  .lg__margin--x-auto { margin-left: auto; margin-right: auto; }
+
+  @each $name, $value in $grid_units {
+    .lg__margin--#{$name } { margin: $value * $grid_unit; }
+    .lg__margin--top-#{$name } { margin-top: $value * $grid_unit; }
+    .lg__margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+    .lg__margin--left-#{$name } { margin-left: $value * $grid_unit; }
+    .lg__margin--right-#{$name } { margin-right: $value * $grid_unit; }
+    .lg__margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+    .lg__margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+  }
+}
+
+
+@media screen and (min-width: $xl_device) {
+  .xl__margin--x-auto { margin-left: auto; margin-right: auto; }
+
+  @each $name, $value in $grid_units {
+    .xl__margin--#{$name } { margin: $value * $grid_unit; }
+    .xl__margin--top-#{$name } { margin-top: $value * $grid_unit; }
+    .xl__margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+    .xl__margin--left-#{$name } { margin-left: $value * $grid_unit; }
+    .xl__margin--right-#{$name } { margin-right: $value * $grid_unit; }
+    .xl__margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+    .xl__margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+  }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__margin--x-auto { margin-left: auto; margin-right: auto; }
+
+  @each $name, $value in $grid_units {
+    .xxl__margin--#{$name } { margin: $value * $grid_unit; }
+    .xxl__margin--top-#{$name } { margin-top: $value * $grid_unit; }
+    .xxl__margin--bottom-#{$name } { margin-bottom: $value * $grid_unit; }
+    .xxl__margin--left-#{$name } { margin-left: $value * $grid_unit; }
+    .xxl__margin--right-#{$name } { margin-right: $value * $grid_unit; }
+    .xxl__margin--x-#{$name } { margin-left: $value * $grid_unit; margin-right: $value * $grid_unit; }
+    .xxl__margin--y-#{$name } { margin-top: $value * $grid_unit; margin-bottom: $value * $grid_unit; }
+  }
+}

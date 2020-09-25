@@ -1,0 +1,732 @@
+@mixin grid-2-columns { grid-template-columns: repeat(2, 1fr); }
+@mixin grid-3-columns { grid-template-columns: repeat(3, 1fr); }
+@mixin grid-4-columns { grid-template-columns: repeat(4, 1fr); }
+@mixin grid-5-columns { grid-template-columns: repeat(5, 1fr); }
+@mixin grid-6-columns { grid-template-columns: repeat(6, 1fr); }
+@mixin grid-7-columns { grid-template-columns: repeat(7, 1fr); }
+@mixin grid-8-columns { grid-template-columns: repeat(8, 1fr); }
+@mixin grid-9-columns { grid-template-columns: repeat(9, 1fr); }
+@mixin grid-10-columns { grid-template-columns: repeat(10, 1fr); }
+@mixin grid-11-columns { grid-template-columns: repeat(11, 1fr); }
+@mixin grid-12-columns { grid-template-columns: repeat(12, 1fr); }
+
+@mixin grid-2-rows { grid-template-rows: repeat(2, 1fr); }
+@mixin grid-3-rows { grid-template-rows: repeat(3, 1fr); }
+@mixin grid-4-rows { grid-template-rows: repeat(4, 1fr); }
+@mixin grid-5-rows { grid-template-rows: repeat(5, 1fr); }
+@mixin grid-6-rows { grid-template-rows: repeat(6, 1fr); }
+@mixin grid-7-rows { grid-template-rows: repeat(7, 1fr); }
+@mixin grid-8-rows { grid-template-rows: repeat(8, 1fr); }
+@mixin grid-9-rows { grid-template-rows: repeat(9, 1fr); }
+@mixin grid-10-rows { grid-template-rows: repeat(10, 1fr); }
+@mixin grid-11-rows { grid-template-rows: repeat(11, 1fr); }
+@mixin grid-12-rows { grid-template-columns: repeat(12, 1fr); }
+
+@mixin col-start-1 { grid-column-start: 1; }
+@mixin col-start-2 { grid-column-start: 2; }
+@mixin col-start-3 { grid-column-start: 3; }
+@mixin col-start-4 { grid-column-start: 4; }
+@mixin col-start-5 { grid-column-start: 5; }
+@mixin col-start-6 { grid-column-start: 6; }
+@mixin col-start-7 { grid-column-start: 7; }
+@mixin col-start-8 { grid-column-start: 8; }
+@mixin col-start-9 { grid-column-start: 9; }
+@mixin col-start-10 { grid-column-start: 10; }
+@mixin col-start-11 { grid-column-start: 11; }
+@mixin col-start-12 { grid-column-start: 12; }
+
+@mixin col-end-2 { grid-column-end: 2; }
+@mixin col-end-3 { grid-column-end: 3; }
+@mixin col-end-4 { grid-column-end: 4; }
+@mixin col-end-5 { grid-column-end: 5; }
+@mixin col-end-6 { grid-column-end: 6; }
+@mixin col-end-7 { grid-column-end: 7; }
+@mixin col-end-8 { grid-column-end: 8; }
+@mixin col-end-9 { grid-column-end: 9; }
+@mixin col-end-10 { grid-column-end: 10; }
+@mixin col-end-11 { grid-column-end: 11; }
+@mixin col-end-12 { grid-column-end: 12; }
+@mixin col-end-13 { grid-column-end: 13; }
+
+@mixin row-start-1 { grid-row-start: 1; }
+@mixin row-start-2 { grid-row-start: 2; }
+@mixin row-start-3 { grid-row-start: 3; }
+@mixin row-start-4 { grid-row-start: 4; }
+@mixin row-start-5 { grid-row-start: 5; }
+@mixin row-start-6 { grid-row-start: 6; }
+@mixin row-start-7 { grid-row-start: 7; }
+@mixin row-start-8 { grid-row-start: 8; }
+@mixin row-start-9 { grid-row-start: 9; }
+@mixin row-start-10 { grid-row-start: 10; }
+@mixin row-start-11 { grid-row-start: 11; }
+@mixin row-start-12 { grid-row-start: 12; }
+
+@mixin row-end-2 { grid-row-end: 2; }
+@mixin row-end-3 { grid-row-end: 3; }
+@mixin row-end-4 { grid-row-end: 4; }
+@mixin row-end-5 { grid-row-end: 5; }
+@mixin row-end-6 { grid-row-end: 6; }
+@mixin row-end-7 { grid-row-end: 7; }
+@mixin row-end-8 { grid-row-end: 8; }
+@mixin row-end-9 { grid-row-end: 9; }
+@mixin row-end-10 { grid-row-end: 10; }
+@mixin row-end-11 { grid-row-end: 11; }
+@mixin row-end-12 { grid-row-end: 12; }
+@mixin row-end-13 { grid-row-end: 13; }
+
+@mixin justify-self--start { justify-self: start; }
+@mixin justify-self--end { justify-self: end; }
+@mixin justify-self--center { justify-self: center; }
+@mixin justify-self--stretch { justify-self: stretch; }
+
+@mixin align-self--start { align-self: start; }
+@mixin align-self--end { align-self: end; }
+@mixin align-self--center { align-self: center; }
+@mixin align-self--stretch { align-self:  stretch;; }
+
+.flex {
+  .grid,
+  .sm__grid,
+  .md__grid,
+  .lg__grid,
+  .xl__grid,
+  .xxl_grid {
+    padding: 0;
+  }
+}
+
+.grid,
+.sm__grid,
+.md__grid,
+.lg__grid,
+.xl__grid,
+.xxl_grid {
+  grid-column-gap: $grid_gap;
+  grid-row-gap: $grid_gap;
+  padding-left: $grid_gap / 2;
+  padding-right: $grid_gap / 2;
+
+  [class*="col-"] { padding: 0; }
+
+  @media screen and (min-width: $sm_device) {
+    grid-column-gap: $sm__grid_gap;
+    grid-row-gap: $sm__grid_gap;
+    padding-left: $sm__grid_gap / 2;
+    padding-right: $sm__grid_gap / 2;
+  }
+
+  @media screen and (min-width: $md_device) {
+    grid-column-gap: $md__grid_gap;
+    grid-row-gap: $md__grid_gap;
+    padding-left: $md__grid_gap / 2;
+    padding-right: $md__grid_gap / 2;
+  }
+
+  @media screen and (min-width: $lg_device) {
+    grid-column-gap: $lg__grid_gap;
+    grid-row-gap: $lg__grid_gap;
+    padding-left: $lg__grid_gap / 2;
+    padding-right: $lg__grid_gap / 2;
+  }
+
+  @media screen and (min-width: $xl_device) {
+    grid-column-gap: $xl__grid_gap;
+    grid-row-gap: $xl__grid_gap;
+    padding-left: $xl__grid_gap / 2;
+    padding-right: $xl__grid_gap / 2;
+  }
+
+  @media screen and (min-width: $xxl_device) {
+    grid-column-gap: $xxl__grid_gap;
+    grid-row-gap: $xxl__grid_gap;
+    padding-left: $xxl__grid_gap / 2;
+    padding-right: $xxl__grid_gap / 2;
+  }
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+}
+
+
+@media screen and (min-width: $sm_device) {
+  .sm__grid {
+    width: 100%;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: $md_device) {
+  .md__grid {
+    width: 100%;
+    display: grid;
+    grid-column-gap: $md__grid_gap;
+    grid-row-gap: $md__grid_gap;
+    padding-left: $md__grid_gap / 2;
+    padding-right: $md__grid_gap / 2;
+  }
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__grid {
+    width: 100%;
+    display: grid;
+    grid-column-gap: $lg__grid_gap;
+    grid-row-gap: $lg__grid_gap;
+    padding-left: $lg__grid_gap / 2;
+    padding-right: $lg__grid_gap / 2;
+  }
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__grid {
+    width: 100%;
+    display: grid;
+    grid-column-gap: $xl__grid_gap;
+    grid-row-gap: $xl__grid_gap;
+    padding-left: $xl__grid_gap / 2;
+    padding-right: $xl__grid_gap / 2;
+  }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xl__grid {
+    width: 100%;
+    display: grid;
+    grid-column-gap: $xxl__grid_gap;
+    grid-row-gap: $xxl__grid_gap;
+    padding-left: $xxl__grid_gap / 2;
+    padding-right: $xxl__grid_gap / 2;
+  }
+}
+
+.grid-2-columns { @include grid-2-columns; }
+.grid-3-columns { @include grid-3-columns; }
+.grid-4-columns { @include grid-4-columns; }
+.grid-5-columns { @include grid-5-columns; }
+.grid-6-columns { @include grid-6-columns; }
+.grid-7-columns { @include grid-7-columns; }
+.grid-8-columns { @include grid-8-columns; }
+.grid-9-columns { @include grid-9-columns; }
+.grid-10-columns { @include grid-10-columns; }
+.grid-11-columns { @include grid-11-columns; }
+.grid-12-columns { @include grid-12-columns; }
+
+.grid-2-rows { @include grid-2-rows; }
+.grid-3-rows { @include grid-3-rows; }
+.grid-4-rows { @include grid-4-rows; }
+.grid-5-rows { @include grid-5-rows; }
+.grid-6-rows { @include grid-6-rows; }
+.grid-7-rows { @include grid-7-rows; }
+.grid-8-rows { @include grid-8-rows; }
+.grid-9-rows { @include grid-9-rows; }
+.grid-10-rows { @include grid-10-rows; }
+.grid-11-rows { @include grid-11-rows; }
+.grid-12-rows { @include grid-12-rows; }
+
+.col-start-1 { @include col-start-1; }
+.col-start-2 { @include col-start-2; }
+.col-start-3 { @include col-start-3; }
+.col-start-4 { @include col-start-4; }
+.col-start-5 { @include col-start-5; }
+.col-start-6 { @include col-start-6; }
+.col-start-7 { @include col-start-7; }
+.col-start-8 { @include col-start-8; }
+.col-start-9 { @include col-start-9; }
+.col-start-10 { @include col-start-10; }
+.col-start-11 { @include col-start-11; }
+.col-start-12 { @include col-start-12; }
+
+.col-end-2 { @include col-end-2; }
+.col-end-3 { @include col-end-3; }
+.col-end-4 { @include col-end-4; }
+.col-end-5 { @include col-end-5; }
+.col-end-6 { @include col-end-6; }
+.col-end-7 { @include col-end-7; }
+.col-end-8 { @include col-end-8; }
+.col-end-9 { @include col-end-9; }
+.col-end-10 { @include col-end-10; }
+.col-end-11 { @include col-end-11; }
+.col-end-12 { @include col-end-12; }
+.col-end-13 { @include col-end-13; }
+
+.row-start-1 { @include row-start-1; }
+.row-start-2 { @include row-start-2; }
+.row-start-3 { @include row-start-3; }
+.row-start-4 { @include row-start-4; }
+.row-start-5 { @include row-start-5; }
+.row-start-6 { @include row-start-6; }
+.row-start-7 { @include row-start-7; }
+.row-start-8 { @include row-start-8; }
+.row-start-9 { @include row-start-9; }
+.row-start-10 { @include row-start-10; }
+.row-start-11 { @include row-start-11; }
+.row-start-12 { @include row-start-12; }
+
+.row-end-2 { @include row-end-2; }
+.row-end-3 { @include row-end-3; }
+.row-end-4 { @include row-end-4; }
+.row-end-5 { @include row-end-5; }
+.row-end-6 { @include row-end-6; }
+.row-end-7 { @include row-end-7; }
+.row-end-8 { @include row-end-8; }
+.row-end-9 { @include row-end-9; }
+.row-end-10 { @include row-end-10; }
+.row-end-11 { @include row-end-11; }
+.row-end-12 { @include row-end-12; }
+.row-end-13 { @include row-end-13; }
+
+.justify-self--start { @include justify-self--start; }
+.justify-self--end { @include justify-self--end; }
+.justify-self--center { @include justify-self--center; }
+.justify-self--stretch { @include justify-self--stretch; }
+
+div[class*="grid-"] .align-self--start { @include align-self--start; }
+div[class*="grid-"] .align-self--end { @include align-self--end; }
+div[class*="grid-"] .align-self--center { @include align-self--center; }
+div[class*="grid-"] .align-self--stretch { @include align-self--stretch; }
+
+@media screen and (min-width: $sm_device) {
+  .sm__grid-2-columns { @include grid-2-columns; }
+  .sm__grid-3-columns { @include grid-3-columns; }
+  .sm__grid-4-columns { @include grid-4-columns; }
+  .sm__grid-5-columns { @include grid-5-columns; }
+  .sm__grid-6-columns { @include grid-6-columns; }
+  .sm__grid-7-columns { @include grid-7-columns; }
+  .sm__grid-8-columns { @include grid-8-columns; }
+  .sm__grid-9-columns { @include grid-9-columns; }
+  .sm__grid-10-columns { @include grid-10-columns; }
+  .sm__grid-11-columns { @include grid-11-columns; }
+  .sm__grid-12-columns { @include grid-12-columns; }
+
+  .sm__grid-2-rows { @include grid-2-rows; }
+  .sm__grid-3-rows { @include grid-3-rows; }
+  .sm__grid-4-rows { @include grid-4-rows; }
+  .sm__grid-5-rows { @include grid-5-rows; }
+  .sm__grid-6-rows { @include grid-6-rows; }
+  .sm__grid-7-rows { @include grid-7-rows; }
+  .sm__grid-8-rows { @include grid-8-rows; }
+  .sm__grid-9-rows { @include grid-9-rows; }
+  .sm__grid-10-rows { @include grid-10-rows; }
+  .sm__grid-11-rows { @include grid-11-rows; }
+  .sm__grid-12-rows { @include grid-12-rows; }
+
+  .sm__col-start-1 { @include col-start-1; }
+  .sm__col-start-2 { @include col-start-2; }
+  .sm__col-start-3 { @include col-start-3; }
+  .sm__col-start-4 { @include col-start-4; }
+  .sm__col-start-5 { @include col-start-5; }
+  .sm__col-start-6 { @include col-start-6; }
+  .sm__col-start-7 { @include col-start-7; }
+  .sm__col-start-8 { @include col-start-8; }
+  .sm__col-start-9 { @include col-start-9; }
+  .sm__col-start-10 { @include col-start-10; }
+  .sm__col-start-11 { @include col-start-11; }
+  .sm__col-start-12 { @include col-start-12; }
+
+  .sm__col-end-2 { @include col-end-2; }
+  .sm__col-end-3 { @include col-end-3; }
+  .sm__col-end-4 { @include col-end-4; }
+  .sm__col-end-5 { @include col-end-5; }
+  .sm__col-end-6 { @include col-end-6; }
+  .sm__col-end-7 { @include col-end-7; }
+  .sm__col-end-8 { @include col-end-8; }
+  .sm__col-end-9 { @include col-end-9; }
+  .sm__col-end-10 { @include col-end-10; }
+  .sm__col-end-11 { @include col-end-11; }
+  .sm__col-end-12 { @include col-end-12; }
+  .sm__col-end-13 { @include col-end-13; }
+
+  .sm__row-start-1 { @include row-start-1; }
+  .sm__row-start-2 { @include row-start-2; }
+  .sm__row-start-3 { @include row-start-3; }
+  .sm__row-start-4 { @include row-start-4; }
+  .sm__row-start-5 { @include row-start-5; }
+  .sm__row-start-6 { @include row-start-6; }
+  .sm__row-start-7 { @include row-start-7; }
+  .sm__row-start-8 { @include row-start-8; }
+  .sm__row-start-9 { @include row-start-9; }
+  .sm__row-start-10 { @include row-start-10; }
+  .sm__row-start-11 { @include row-start-11; }
+  .sm__row-start-12 { @include row-start-12; }
+
+  .sm__row-end-2 { @include row-end-2; }
+  .sm__row-end-3 { @include row-end-3; }
+  .sm__row-end-4 { @include row-end-4; }
+  .sm__row-end-5 { @include row-end-5; }
+  .sm__row-end-6 { @include row-end-6; }
+  .sm__row-end-7 { @include row-end-7; }
+  .sm__row-end-8 { @include row-end-8; }
+  .sm__row-end-9 { @include row-end-9; }
+  .sm__row-end-10 { @include row-end-10; }
+  .sm__row-end-11 { @include row-end-11; }
+  .sm__row-end-12 { @include row-end-12; }
+  .sm__row-end-13 { @include row-end-13; }
+
+  .sm__justify-self--start { @include justify-self--start; }
+  .sm__justify-self--end { @include justify-self--end; }
+  .sm__justify-self--center { @include justify-self--center; }
+  .sm__justify-self--stretch { @include justify-self--stretch; }
+
+  div[class*="grid-"] .sm__align-self--start { @include align-self--start; }
+  div[class*="grid-"] .sm__align-self--end { @include align-self--end; }
+  div[class*="grid-"] .sm__align-self--center { @include align-self--center; }
+  div[class*="grid-"] .sm__align-self--stretch { @include align-self--stretch; }
+}
+
+@media screen and (min-width: $md_device) {
+  .md__grid-2-columns { @include grid-2-columns; }
+  .md__grid-3-columns { @include grid-3-columns; }
+  .md__grid-4-columns { @include grid-4-columns; }
+  .md__grid-5-columns { @include grid-5-columns; }
+  .md__grid-6-columns { @include grid-6-columns; }
+  .md__grid-7-columns { @include grid-7-columns; }
+  .md__grid-8-columns { @include grid-8-columns; }
+  .md__grid-9-columns { @include grid-9-columns; }
+  .md__grid-10-columns { @include grid-10-columns; }
+  .md__grid-11-columns { @include grid-11-columns; }
+  .md__grid-12-columns { @include grid-12-columns; }
+
+  .md__grid-2-rows { @include grid-2-rows; }
+  .md__grid-3-rows { @include grid-3-rows; }
+  .md__grid-4-rows { @include grid-4-rows; }
+  .md__grid-5-rows { @include grid-5-rows; }
+  .md__grid-6-rows { @include grid-6-rows; }
+  .md__grid-7-rows { @include grid-7-rows; }
+  .md__grid-8-rows { @include grid-8-rows; }
+  .md__grid-9-rows { @include grid-9-rows; }
+  .md__grid-10-rows { @include grid-10-rows; }
+  .md__grid-11-rows { @include grid-11-rows; }
+  .md__grid-12-rows { @include grid-12-rows; }
+
+  .md__col-start-1 { @include col-start-1; }
+  .md__col-start-2 { @include col-start-2; }
+  .md__col-start-3 { @include col-start-3; }
+  .md__col-start-4 { @include col-start-4; }
+  .md__col-start-5 { @include col-start-5; }
+  .md__col-start-6 { @include col-start-6; }
+  .md__col-start-7 { @include col-start-7; }
+  .md__col-start-8 { @include col-start-8; }
+  .md__col-start-9 { @include col-start-9; }
+  .md__col-start-10 { @include col-start-10; }
+  .md__col-start-11 { @include col-start-11; }
+  .md__col-start-12 { @include col-start-12; }
+
+  .md__col-end-2 { @include col-end-2; }
+  .md__col-end-3 { @include col-end-3; }
+  .md__col-end-4 { @include col-end-4; }
+  .md__col-end-5 { @include col-end-5; }
+  .md__col-end-6 { @include col-end-6; }
+  .md__col-end-7 { @include col-end-7; }
+  .md__col-end-8 { @include col-end-8; }
+  .md__col-end-9 { @include col-end-9; }
+  .md__col-end-10 { @include col-end-10; }
+  .md__col-end-11 { @include col-end-11; }
+  .md__col-end-12 { @include col-end-12; }
+  .md__col-end-13 { @include col-end-13; }
+
+  .md__row-start-1 { @include row-start-1; }
+  .md__row-start-2 { @include row-start-2; }
+  .md__row-start-3 { @include row-start-3; }
+  .md__row-start-4 { @include row-start-4; }
+  .md__row-start-5 { @include row-start-5; }
+  .md__row-start-6 { @include row-start-6; }
+  .md__row-start-7 { @include row-start-7; }
+  .md__row-start-8 { @include row-start-8; }
+  .md__row-start-9 { @include row-start-9; }
+  .md__row-start-10 { @include row-start-10; }
+  .md__row-start-11 { @include row-start-11; }
+  .md__row-start-12 { @include row-start-12; }
+
+  .md__row-end-2 { @include row-end-2; }
+  .md__row-end-3 { @include row-end-3; }
+  .md__row-end-4 { @include row-end-4; }
+  .md__row-end-5 { @include row-end-5; }
+  .md__row-end-6 { @include row-end-6; }
+  .md__row-end-7 { @include row-end-7; }
+  .md__row-end-8 { @include row-end-8; }
+  .md__row-end-9 { @include row-end-9; }
+  .md__row-end-10 { @include row-end-10; }
+  .md__row-end-11 { @include row-end-11; }
+  .md__row-end-12 { @include row-end-12; }
+  .md__row-end-13 { @include row-end-13; }
+
+  .md__justify-self--start { @include justify-self--start; }
+  .md__justify-self--end { @include justify-self--end; }
+  .md__justify-self--center { @include justify-self--center; }
+  .md__justify-self--stretch { @include justify-self--stretch; }
+
+  div[class*="grid-"] .md__align-self--start { @include align-self--start; }
+  div[class*="grid-"] .md__align-self--end { @include align-self--end; }
+  div[class*="grid-"] .md__align-self--center { @include align-self--center; }
+  div[class*="grid-"] .md__align-self--stretch { @include align-self--stretch; }
+
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__grid-2-columns { @include grid-2-columns; }
+  .lg__grid-3-columns { @include grid-3-columns; }
+  .lg__grid-4-columns { @include grid-4-columns; }
+  .lg__grid-5-columns { @include grid-5-columns; }
+  .lg__grid-6-columns { @include grid-6-columns; }
+  .lg__grid-7-columns { @include grid-7-columns; }
+  .lg__grid-8-columns { @include grid-8-columns; }
+  .lg__grid-9-columns { @include grid-9-columns; }
+  .lg__grid-10-columns { @include grid-10-columns; }
+  .lg__grid-11-columns { @include grid-11-columns; }
+  .lg__grid-12-columns { @include grid-12-columns; }
+
+  .lg__grid-2-rows { @include grid-2-rows; }
+  .lg__grid-3-rows { @include grid-3-rows; }
+  .lg__grid-4-rows { @include grid-4-rows; }
+  .lg__grid-5-rows { @include grid-5-rows; }
+  .lg__grid-6-rows { @include grid-6-rows; }
+  .lg__grid-7-rows { @include grid-7-rows; }
+  .lg__grid-8-rows { @include grid-8-rows; }
+  .lg__grid-9-rows { @include grid-9-rows; }
+  .lg__grid-10-rows { @include grid-10-rows; }
+  .lg__grid-11-rows { @include grid-11-rows; }
+  .lg__grid-12-rows { @include grid-12-rows; }
+
+  .lg__col-start-1 { @include col-start-1; }
+  .lg__col-start-2 { @include col-start-2; }
+  .lg__col-start-3 { @include col-start-3; }
+  .lg__col-start-4 { @include col-start-4; }
+  .lg__col-start-5 { @include col-start-5; }
+  .lg__col-start-6 { @include col-start-6; }
+  .lg__col-start-7 { @include col-start-7; }
+  .lg__col-start-8 { @include col-start-8; }
+  .lg__col-start-9 { @include col-start-9; }
+  .lg__col-start-10 { @include col-start-10; }
+  .lg__col-start-11 { @include col-start-11; }
+  .lg__col-start-12 { @include col-start-12; }
+
+  .lg__col-end-2 { @include col-end-2; }
+  .lg__col-end-3 { @include col-end-3; }
+  .lg__col-end-4 { @include col-end-4; }
+  .lg__col-end-5 { @include col-end-5; }
+  .lg__col-end-6 { @include col-end-6; }
+  .lg__col-end-7 { @include col-end-7; }
+  .lg__col-end-8 { @include col-end-8; }
+  .lg__col-end-9 { @include col-end-9; }
+  .lg__col-end-10 { @include col-end-10; }
+  .lg__col-end-11 { @include col-end-11; }
+  .lg__col-end-12 { @include col-end-12; }
+  .lg__col-end-13 { @include col-end-13; }
+
+  .lg__row-start-1 { @include row-start-1; }
+  .lg__row-start-2 { @include row-start-2; }
+  .lg__row-start-3 { @include row-start-3; }
+  .lg__row-start-4 { @include row-start-4; }
+  .lg__row-start-5 { @include row-start-5; }
+  .lg__row-start-6 { @include row-start-6; }
+  .lg__row-start-7 { @include row-start-7; }
+  .lg__row-start-8 { @include row-start-8; }
+  .lg__row-start-9 { @include row-start-9; }
+  .lg__row-start-10 { @include row-start-10; }
+  .lg__row-start-11 { @include row-start-11; }
+  .lg__row-start-12 { @include row-start-12; }
+
+  .lg__row-end-2 { @include row-end-2; }
+  .lg__row-end-3 { @include row-end-3; }
+  .lg__row-end-4 { @include row-end-4; }
+  .lg__row-end-5 { @include row-end-5; }
+  .lg__row-end-6 { @include row-end-6; }
+  .lg__row-end-7 { @include row-end-7; }
+  .lg__row-end-8 { @include row-end-8; }
+  .lg__row-end-9 { @include row-end-9; }
+  .lg__row-end-10 { @include row-end-10; }
+  .lg__row-end-11 { @include row-end-11; }
+  .lg__row-end-12 { @include row-end-12; }
+  .lg__row-end-13 { @include row-end-13; }
+
+  .lg__justify-self--start { @include justify-self--start; }
+  .lg__justify-self--end { @include justify-self--end; }
+  .lg__justify-self--center { @include justify-self--center; }
+  .lg__justify-self--stretch { @include justify-self--stretch; }
+
+  div[class*="grid-"] .lg__align-self--start { @include align-self--start; }
+  div[class*="grid-"] .lg__align-self--end { @include align-self--end; }
+  div[class*="grid-"] .lg__align-self--center { @include align-self--center; }
+  div[class*="grid-"] .lg__align-self--stretch { @include align-self--stretch; }
+
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__grid-2-columns { @include grid-2-columns; }
+  .xl__grid-3-columns { @include grid-3-columns; }
+  .xl__grid-4-columns { @include grid-4-columns; }
+  .xl__grid-5-columns { @include grid-5-columns; }
+  .xl__grid-6-columns { @include grid-6-columns; }
+  .xl__grid-7-columns { @include grid-7-columns; }
+  .xl__grid-8-columns { @include grid-8-columns; }
+  .xl__grid-9-columns { @include grid-9-columns; }
+  .xl__grid-10-columns { @include grid-10-columns; }
+  .xl__grid-11-columns { @include grid-11-columns; }
+  .xl__grid-12-columns { @include grid-12-columns; }
+
+  .xl__grid-2-rows { @include grid-2-rows; }
+  .xl__grid-3-rows { @include grid-3-rows; }
+  .xl__grid-4-rows { @include grid-4-rows; }
+  .xl__grid-5-rows { @include grid-5-rows; }
+  .xl__grid-6-rows { @include grid-6-rows; }
+  .xl__grid-7-rows { @include grid-7-rows; }
+  .xl__grid-8-rows { @include grid-8-rows; }
+  .xl__grid-9-rows { @include grid-9-rows; }
+  .xl__grid-10-rows { @include grid-10-rows; }
+  .xl__grid-11-rows { @include grid-11-rows; }
+  .xl__grid-12-rows { @include grid-12-rows; }
+
+  .xl__col-start-1 { @include col-start-1; }
+  .xl__col-start-2 { @include col-start-2; }
+  .xl__col-start-3 { @include col-start-3; }
+  .xl__col-start-4 { @include col-start-4; }
+  .xl__col-start-5 { @include col-start-5; }
+  .xl__col-start-6 { @include col-start-6; }
+  .xl__col-start-7 { @include col-start-7; }
+  .xl__col-start-8 { @include col-start-8; }
+  .xl__col-start-9 { @include col-start-9; }
+  .xl__col-start-10 { @include col-start-10; }
+  .xl__col-start-11 { @include col-start-11; }
+  .xl__col-start-12 { @include col-start-12; }
+
+  .xl__col-end-2 { @include col-end-2; }
+  .xl__col-end-3 { @include col-end-3; }
+  .xl__col-end-4 { @include col-end-4; }
+  .xl__col-end-5 { @include col-end-5; }
+  .xl__col-end-6 { @include col-end-6; }
+  .xl__col-end-7 { @include col-end-7; }
+  .xl__col-end-8 { @include col-end-8; }
+  .xl__col-end-9 { @include col-end-9; }
+  .xl__col-end-10 { @include col-end-10; }
+  .xl__col-end-11 { @include col-end-11; }
+  .xl__col-end-12 { @include col-end-12; }
+  .xl__col-end-13 { @include col-end-13; }
+
+  .xl__row-start-1 { @include row-start-1; }
+  .xl__row-start-2 { @include row-start-2; }
+  .xl__row-start-3 { @include row-start-3; }
+  .xl__row-start-4 { @include row-start-4; }
+  .xl__row-start-5 { @include row-start-5; }
+  .xl__row-start-6 { @include row-start-6; }
+  .xl__row-start-7 { @include row-start-7; }
+  .xl__row-start-8 { @include row-start-8; }
+  .xl__row-start-9 { @include row-start-9; }
+  .xl__row-start-10 { @include row-start-10; }
+  .xl__row-start-11 { @include row-start-11; }
+  .xl__row-start-12 { @include row-start-12; }
+
+  .xl__row-end-2 { @include row-end-2; }
+  .xl__row-end-3 { @include row-end-3; }
+  .xl__row-end-4 { @include row-end-4; }
+  .xl__row-end-5 { @include row-end-5; }
+  .xl__row-end-6 { @include row-end-6; }
+  .xl__row-end-7 { @include row-end-7; }
+  .xl__row-end-8 { @include row-end-8; }
+  .xl__row-end-9 { @include row-end-9; }
+  .xl__row-end-10 { @include row-end-10; }
+  .xl__row-end-11 { @include row-end-11; }
+  .xl__row-end-12 { @include row-end-12; }
+  .xl__row-end-13 { @include row-end-13; }
+
+  .xl__justify-self--start { @include justify-self--start; }
+  .xl__justify-self--end { @include justify-self--end; }
+  .xl__justify-self--center { @include justify-self--center; }
+  .xl__justify-self--stretch { @include justify-self--stretch; }
+
+  div[class*="grid-"] .xl__align-self--start { @include align-self--start; }
+  div[class*="grid-"] .xl__align-self--end { @include align-self--end; }
+  div[class*="grid-"] .xl__align-self--center { @include align-self--center; }
+  div[class*="grid-"] .xl__align-self--stretch { @include align-self--stretch; }
+
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__grid-2-columns { @include grid-2-columns; }
+  .xxl__grid-3-columns { @include grid-3-columns; }
+  .xxl__grid-4-columns { @include grid-4-columns; }
+  .xxl__grid-5-columns { @include grid-5-columns; }
+  .xxl__grid-6-columns { @include grid-6-columns; }
+  .xxl__grid-7-columns { @include grid-7-columns; }
+  .xxl__grid-8-columns { @include grid-8-columns; }
+  .xxl__grid-9-columns { @include grid-9-columns; }
+  .xxl__grid-10-columns { @include grid-10-columns; }
+  .xxl__grid-11-columns { @include grid-11-columns; }
+  .xxl__grid-12-columns { @include grid-12-columns; }
+
+  .xxl__grid-2-rows { @include grid-2-rows; }
+  .xxl__grid-3-rows { @include grid-3-rows; }
+  .xxl__grid-4-rows { @include grid-4-rows; }
+  .xxl__grid-5-rows { @include grid-5-rows; }
+  .xxl__grid-6-rows { @include grid-6-rows; }
+  .xxl__grid-7-rows { @include grid-7-rows; }
+  .xxl__grid-8-rows { @include grid-8-rows; }
+  .xxl__grid-9-rows { @include grid-9-rows; }
+  .xxl__grid-10-rows { @include grid-10-rows; }
+  .xxl__grid-11-rows { @include grid-11-rows; }
+  .xxl__grid-12-rows { @include grid-12-rows; }
+
+  .xxl__col-start-1 { @include col-start-1; }
+  .xxl__col-start-2 { @include col-start-2; }
+  .xxl__col-start-3 { @include col-start-3; }
+  .xxl__col-start-4 { @include col-start-4; }
+  .xxl__col-start-5 { @include col-start-5; }
+  .xxl__col-start-6 { @include col-start-6; }
+  .xxl__col-start-7 { @include col-start-7; }
+  .xxl__col-start-8 { @include col-start-8; }
+  .xxl__col-start-9 { @include col-start-9; }
+  .xxl__col-start-10 { @include col-start-10; }
+  .xxl__col-start-11 { @include col-start-11; }
+  .xxl__col-start-12 { @include col-start-12; }
+
+  .xxl__col-end-2 { @include col-end-2; }
+  .xxl__col-end-3 { @include col-end-3; }
+  .xxl__col-end-4 { @include col-end-4; }
+  .xxl__col-end-5 { @include col-end-5; }
+  .xxl__col-end-6 { @include col-end-6; }
+  .xxl__col-end-7 { @include col-end-7; }
+  .xxl__col-end-8 { @include col-end-8; }
+  .xxl__col-end-9 { @include col-end-9; }
+  .xxl__col-end-10 { @include col-end-10; }
+  .xxl__col-end-11 { @include col-end-11; }
+  .xxl__col-end-12 { @include col-end-12; }
+  .xxl__col-end-13 { @include col-end-13; }
+
+  .xxl__row-start-1 { @include row-start-1; }
+  .xxl__row-start-2 { @include row-start-2; }
+  .xxl__row-start-3 { @include row-start-3; }
+  .xxl__row-start-4 { @include row-start-4; }
+  .xxl__row-start-5 { @include row-start-5; }
+  .xxl__row-start-6 { @include row-start-6; }
+  .xxl__row-start-7 { @include row-start-7; }
+  .xxl__row-start-8 { @include row-start-8; }
+  .xxl__row-start-9 { @include row-start-9; }
+  .xxl__row-start-10 { @include row-start-10; }
+  .xxl__row-start-11 { @include row-start-11; }
+  .xxl__row-start-12 { @include row-start-12; }
+
+  .xxl__row-end-2 { @include row-end-2; }
+  .xxl__row-end-3 { @include row-end-3; }
+  .xxl__row-end-4 { @include row-end-4; }
+  .xxl__row-end-5 { @include row-end-5; }
+  .xxl__row-end-6 { @include row-end-6; }
+  .xxl__row-end-7 { @include row-end-7; }
+  .xxl__row-end-8 { @include row-end-8; }
+  .xxl__row-end-9 { @include row-end-9; }
+  .xxl__row-end-10 { @include row-end-10; }
+  .xxl__row-end-11 { @include row-end-11; }
+  .xxl__row-end-12 { @include row-end-12; }
+  .xxl__row-end-13 { @include row-end-13; }
+
+  .xxl__justify-self--start { @include justify-self--start; }
+  .xxl__justify-self--end { @include justify-self--end; }
+  .xxl__justify-self--center { @include justify-self--center; }
+  .xxl__justify-self--stretch { @include justify-self--stretch; }
+
+  div[class*="grid-"] .xxl__align-self--start { @include align-self--start; }
+  div[class*="grid-"] .xxl__align-self--end { @include align-self--end; }
+  div[class*="grid-"] .xxl__align-self--center { @include align-self--center; }
+  div[class*="grid-"] .xxl__align-self--stretch { @include align-self--stretch; }
+
+}

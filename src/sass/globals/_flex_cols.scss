@@ -1,0 +1,235 @@
+@mixin col-1 { width: 8.3333%; }
+@mixin col-2 { width: 16.6666%; }
+@mixin col-3 { width: 25%; }
+@mixin col-4 { width: 33.3332%; }
+@mixin col-5 { width: 41.6665%; }
+@mixin col-6 { width: 50%; }
+@mixin col-7 { width: 58.3331%; }
+@mixin col-8 { width: 66.6664%; }
+@mixin col-9 { width: 75%; }
+@mixin col-10 { width: 83.3333%; }
+@mixin col-11 { width: 91.6667%; }
+@mixin col-12 { width: 100%; }
+
+@mixin col-offset-0 { margin-left: 0; }
+@mixin col-offset-1 { margin-left: 8.3333%; }
+@mixin col-offset-2 { margin-left: 16.6666%; }
+@mixin col-offset-3 { margin-left: 25%; }
+@mixin col-offset-4 { margin-left: 33.332%; }
+@mixin col-offset-5 { margin-left: 41.6665%; }
+@mixin col-offset-6 { margin-left: 50%; }
+@mixin col-offset-7 { margin-left: 58.3333%; }
+@mixin col-offset-8 { margin-left: 66.6666%; }
+@mixin col-offset-9 { margin-left: 75%; }
+@mixin col-offset-10 { margin-left: 83.3333%; }
+@mixin col-offset-11 { margin-left: 91.6667%; }
+
+
+.flex,
+.flex--no-wrap,
+.flex--reverse,
+.flex--reverse-no-wrap,
+.flex--column,
+.flex--column-no-wrap,
+.flex--column-reverse,
+.flex--column-reverse-no-wrap {
+  [class*="col-"] {
+    padding-right: $grid_gap / 2;
+    padding-left: $grid_gap / 2;
+
+    @media screen and (min-width: $sm_device) {
+      padding-right: $sm__grid_gap / 2;
+      padding-left: $sm__grid_gap / 2;
+    }
+
+    @media screen and (min-width: $md_device) {
+      padding-right: $md__grid_gap / 2;
+      padding-left: $md__grid_gap / 2;
+    }
+
+    @media screen and (min-width: $lg_device) {
+      padding-right: $lg__grid_gap / 2;
+      padding-left: $lg__grid_gap / 2;
+    }
+
+    @media screen and (min-width: $xl_device) {
+      padding-right: $xl__grid_gap / 2;
+      padding-left: $xl__grid_gap / 2;
+    }
+
+    @media screen and (min-width: $xxl_device) {
+      padding-right: $xxl__grid_gap / 2;
+      padding-left: $xxl__grid_gap / 2;
+    }
+  }
+}
+
+.col-1 { @include col-1; }
+.col-2 { @include col-2; }
+.col-3 { @include col-3; }
+.col-4 { @include col-4; }
+.col-5 { @include col-5; }
+.col-6 { @include col-6; }
+.col-7 { @include col-7; }
+.col-8 { @include col-8; }
+.col-9 { @include col-9; }
+.col-10 { @include col-10; }
+.col-11 { @include col-11; }
+.col-12 { @include col-12; }
+
+.col-offset-0 { @include col-offset-0; }
+.col-offset-1 { @include col-offset-1; }
+.col-offset-2 { @include col-offset-2; }
+.col-offset-3 { @include col-offset-3; }
+.col-offset-4 { @include col-offset-4; }
+.col-offset-5 { @include col-offset-5; }
+.col-offset-6 { @include col-offset-6; }
+.col-offset-7 { @include col-offset-7; }
+.col-offset-8 { @include col-offset-8; }
+.col-offset-9 { @include col-offset-9; }
+.col-offset-10 { @include col-offset-10; }
+.col-offset-11 { @include col-offset-11; }
+
+
+@media screen and (min-width: $sm_device) {
+  .sm__col-1 { @include col-1; }
+  .sm__col-2 { @include col-2; }
+  .sm__col-3 { @include col-3; }
+  .sm__col-4 { @include col-4; }
+  .sm__col-5 { @include col-5; }
+  .sm__col-6 { @include col-6; }
+  .sm__col-7 { @include col-7; }
+  .sm__col-8 { @include col-8; }
+  .sm__col-9 { @include col-9; }
+  .sm__col-10 { @include col-10; }
+  .sm__col-11 { @include col-11; }
+  .sm__col-12 { @include col-12; }
+
+  .sm__col-offset-0 { @include col-offset-0; }
+  .sm__col-offset-1 { @include col-offset-1; }
+  .sm__col-offset-2 { @include col-offset-2; }
+  .sm__col-offset-3 { @include col-offset-3; }
+  .sm__col-offset-4 { @include col-offset-4; }
+  .sm__col-offset-5 { @include col-offset-5; }
+  .sm__col-offset-6 { @include col-offset-6; }
+  .sm__col-offset-7 { @include col-offset-7; }
+  .sm__col-offset-8 { @include col-offset-8; }
+  .sm__col-offset-9 { @include col-offset-9; }
+  .sm__col-offset-10 { @include col-offset-10; }
+  .sm__col-offset-11 { @include col-offset-11; }
+
+}
+
+@media screen and (min-width: $md_device) {
+  .md__col-1 { @include col-1; }
+  .md__col-2 { @include col-2; }
+  .md__col-3 { @include col-3; }
+  .md__col-4 { @include col-4; }
+  .md__col-5 { @include col-5; }
+  .md__col-6 { @include col-6; }
+  .md__col-7 { @include col-7; }
+  .md__col-8 { @include col-8; }
+  .md__col-9 { @include col-9; }
+  .md__col-10 { @include col-10; }
+  .md__col-11 { @include col-11; }
+  .md__col-12 { @include col-12; }
+
+  .md__col-offset-0 { @include col-offset-0; }
+  .md__col-offset-1 { @include col-offset-1; }
+  .md__col-offset-2 { @include col-offset-2; }
+  .md__col-offset-3 { @include col-offset-3; }
+  .md__col-offset-4 { @include col-offset-4; }
+  .md__col-offset-5 { @include col-offset-5; }
+  .md__col-offset-6 { @include col-offset-6; }
+  .md__col-offset-7 { @include col-offset-7; }
+  .md__col-offset-8 { @include col-offset-8; }
+  .md__col-offset-9 { @include col-offset-9; }
+  .md__col-offset-10 { @include col-offset-10; }
+  .md__col-offset-11 { @include col-offset-11; }
+
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__col-1 { @include col-1; }
+  .lg__col-2 { @include col-2; }
+  .lg__col-3 { @include col-3; }
+  .lg__col-4 { @include col-4; }
+  .lg__col-5 { @include col-5; }
+  .lg__col-6 { @include col-6; }
+  .lg__col-7 { @include col-7; }
+  .lg__col-8 { @include col-8; }
+  .lg__col-9 { @include col-9; }
+  .lg__col-10 { @include col-10; }
+  .lg__col-11 { @include col-11; }
+  .lg__col-12 { @include col-12; }
+
+  .lg__col-offset-0 { @include col-offset-0; }
+  .lg__col-offset-1 { @include col-offset-1; }
+  .lg__col-offset-2 { @include col-offset-2; }
+  .lg__col-offset-3 { @include col-offset-3; }
+  .lg__col-offset-4 { @include col-offset-4; }
+  .lg__col-offset-5 { @include col-offset-5; }
+  .lg__col-offset-6 { @include col-offset-6; }
+  .lg__col-offset-7 { @include col-offset-7; }
+  .lg__col-offset-8 { @include col-offset-8; }
+  .lg__col-offset-9 { @include col-offset-9; }
+  .lg__col-offset-10 { @include col-offset-10; }
+  .lg__col-offset-11 { @include col-offset-11; }
+
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__col-1 { @include col-1; }
+  .xl__col-2 { @include col-2; }
+  .xl__col-3 { @include col-3; }
+  .xl__col-4 { @include col-4; }
+  .xl__col-5 { @include col-5; }
+  .xl__col-6 { @include col-6; }
+  .xl__col-7 { @include col-7; }
+  .xl__col-8 { @include col-8; }
+  .xl__col-9 { @include col-9; }
+  .xl__col-10 { @include col-10; }
+  .xl__col-11 { @include col-11; }
+  .xl__col-12 { @include col-12; }
+
+  .xl__col-offset-0 { @include col-offset-0; }
+  .xl__col-offset-1 { @include col-offset-1; }
+  .xl__col-offset-2 { @include col-offset-2; }
+  .xl__col-offset-3 { @include col-offset-3; }
+  .xl__col-offset-4 { @include col-offset-4; }
+  .xl__col-offset-5 { @include col-offset-5; }
+  .xl__col-offset-6 { @include col-offset-6; }
+  .xl__col-offset-7 { @include col-offset-7; }
+  .xl__col-offset-8 { @include col-offset-8; }
+  .xl__col-offset-9 { @include col-offset-9; }
+  .xl__col-offset-10 { @include col-offset-10; }
+  .xl__col-offset-11 { @include col-offset-11; }
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__col-1 { @include col-1; }
+  .xxl__col-2 { @include col-2; }
+  .xxl__col-3 { @include col-3; }
+  .xxl__col-4 { @include col-4; }
+  .xxl__col-5 { @include col-5; }
+  .xxl__col-6 { @include col-6; }
+  .xxl__col-7 { @include col-7; }
+  .xxl__col-8 { @include col-8; }
+  .xxl__col-9 { @include col-9; }
+  .xxl__col-10 { @include col-10; }
+  .xxl__col-11 { @include col-11; }
+  .xxl__col-12 { @include col-12; }
+
+  .xxl__col-offset-0 { @include col-offset-0; }
+  .xxl__col-offset-1 { @include col-offset-1; }
+  .xxl__col-offset-2 { @include col-offset-2; }
+  .xxl__col-offset-3 { @include col-offset-3; }
+  .xxl__col-offset-4 { @include col-offset-4; }
+  .xxl__col-offset-5 { @include col-offset-5; }
+  .xxl__col-offset-6 { @include col-offset-6; }
+  .xxl__col-offset-7 { @include col-offset-7; }
+  .xxl__col-offset-8 { @include col-offset-8; }
+  .xxl__col-offset-9 { @include col-offset-9; }
+  .xxl__col-offset-10 { @include col-offset-10; }
+  .xxl__col-offset-11 { @include col-offset-11; }
+}

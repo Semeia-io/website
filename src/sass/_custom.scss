@@ -1,0 +1,17 @@
+/*------------------------------
+** Custom css should go here or
+** into different directories
+** from config and globals.
+** This will make it easy
+** to update in the future
+------------------------------*/
+.button-tertiary {
+    @extend .button-secondary;
+    background-color: $primary_color_extra_dark;
+}
+
+.wrapper--with-padding {
+    // used when children are not a flex or grid to get even padding
+    padding-left: $grid_gap / 2;
+    padding-right: $grid_gap / 2;
+}

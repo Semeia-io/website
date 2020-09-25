@@ -1,0 +1,27 @@
+.hidden { display: none; }
+.block { display: block; }
+
+@media screen and (min-width: $sm_device) {
+  .sm__hidden { display: none; }
+  .sm__block { display: block;}
+}
+
+@media screen and (min-width: $md_device) {
+  .md__hidden { display: none; }
+  .md__block { display: block;}
+}
+
+@media screen and (min-width: $lg_device) {
+  .lg__hidden { display: none; }
+  .lg__block { display: block;}
+}
+
+@media screen and (min-width: $xl_device) {
+  .xl__hidden { display: none; }
+  .xl__block { display: block;}
+}
+
+@media screen and (min-width: $xxl_device) {
+  .xxl__hidden { display: none; }
+  .xxl__block { display: block;}
+}
