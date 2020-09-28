@@ -1,0 +1,104 @@
+.testimonials {
+    // @extend .wrapper;
+
+    background-color: #f4f4f4;
+    width: 100%;
+    overflow: hidden;
+}
+.testimonials .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.zen-carousel .zen-carousel__track {
+    display: flex;
+    transition: all 0.2s ease-in;
+    pointer-events: none;
+}
+
+.zen-carousel.dragging .zen-carousel__track {
+    transition: none;
+}
+
+.zen-carousel .slide {
+    @extend .wrapper;
+    @extend .padding--y-0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.zen-carousel button svg {
+    fill: #d0cece;
+}
+
+.zen-carousel button.active svg {
+    fill: $secondary_color;
+}
+
+.slide .large-devices {
+    display: none;
+}
+
+@media screen and (min-width: $lg_device) {
+    .slide .small-devices {
+        display: none;
+    }
+    .slide .large-devices {
+        display: grid;
+    }
+}
+
+.small-devices {
+    .testimonial__text {
+        @extend .text--xl;
+        @extend .heading;
+        @extend .text--center;
+        @extend .margin--bottom-7;
+    }
+
+    .testimonail__image {
+        @extend .margin--x-auto;
+        @extend .block;
+        @extend .margin--bottom-5;
+        @extend .corners--rounded;
+        max-width: 50%;
+    }
+
+    .testimonial__author {
+        @extend .text--center;
+        @extend .text--secondary;
+    }
+}
+
+.slide .large-devices {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 20px;
+
+    .testimonial__text {
+        grid-column: 2 / span 8;
+        grid-row: 2 / span 4;
+        z-index: 10;
+        align-self: end;
+        @extend .heading;
+        @extend .text--xl;
+        background-color: #fff;
+        padding: 60px 24px;
+        border-radius: 4px 4px 80px 4px;
+    }
+
+    .testimonial__author {
+        grid-column: 2 / span 7;
+        grid-row: 6 / span 1;
+        @extend .text--secondary;
+        @extend .text--right;
+    }
+
+    .testimonail__image {
+        @extend .corners--rounded;
+        grid-column: 9 / span 3;
+        grid-row: 1 / span 6;
+        align-self: stretch;
+        object-fit: cover;
+    }
+}
