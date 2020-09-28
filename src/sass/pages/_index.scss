@@ -1,0 +1,50 @@
+.home-hero {
+    background-color: $primary_color_dark;
+    background-size: 100% 80%;
+
+    position: relative;
+}
+
+.home-hero a:not(.demo-button) {
+    display: flex;
+    align-items: center;
+    padding: $grid_unit * 1 $grid_unit * 3;
+    border-radius: $grid_unit;
+    transition: all 0.2s ease-in-out;
+}
+
+.home-hero a:hover:not(.button-primary) {
+    background-color: $primary_color_extra_dark;
+    color: $neutral_color_extra_light;
+}
+
+.home-hero a svg {
+    fill: $neutral_color_extra_light;
+    margin-right: $grid_unit * 3;
+}
+
+.home-hero a:hover svg {
+    fill: $secondary_color;
+}
+
+.home-hero .demo-button {
+    display: none;
+}
+
+@media screen and (min-width: $lg_device) {
+    .home-hero img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 20px);
+    }
+
+    .home-hero .demo-button {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+    }
+}

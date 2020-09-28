@@ -19,8 +19,28 @@ button {
     outline: none;
 }
 
+.shadow {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.corners--rounded {
+    border-radius: 4px;
+}
+
 .add-padding {
     // used when children are not a flex or grid to get even padding
     padding-left: $grid_gap / 2;
     padding-right: $grid_gap / 2;
+}
+.relative {
+    position: relative;
+}
+
+@media screen and (min-width: $lg_device) {
+    .lg__align-content--center {
+        align-content: center;
+    }
+    .lg__align-content--end {
+        align-content: end;
+    }
 }
