@@ -21,6 +21,7 @@
 .home-hero a svg {
     fill: $neutral_color_extra_light;
     margin-right: $grid_unit * 3;
+    width: 36px;
 }
 
 .home-hero a:hover svg {
@@ -81,5 +82,20 @@
         bottom: 0;
         left: 0;
         z-index: -1;
+    }
+}
+
+.nos-produits {
+    svg {
+        fill: $secondary_color;
+        width: 60px;
+    }
+
+    a p {
+        color: $neutral_color;
+    }
+
+    a:hover {
+        background-color: $neutral_color_extra_light;
     }
 }
