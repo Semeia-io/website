@@ -60,3 +60,16 @@
 .client__logos {
     height: fit-content;
 }
+
+.home-advantages {
+    background-image: url("/assets/svgs/section-vector.svg");
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $lg_device) {
+        background-size: 250px;
+    }
+
+    .lg__grid {
+        row-gap: 0;
+    }
+}

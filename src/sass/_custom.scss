@@ -13,6 +13,7 @@ button {
 .button-tertiary {
     @extend .button-secondary;
     background-color: $primary_color_extra_dark;
+    border: none;
 }
 
 button {
@@ -47,4 +48,28 @@ button {
 
 .bg--light {
     background-color: $neutral_color_extra_light;
+}
+
+.bg--white {
+    background-color: #fff;
+}
+
+.bg--primary {
+    background-color: $primary_color_dark;
+}
+
+.bg--secondary {
+    background-color: $secondary_color;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: $secondary_color;
+}
+
+.lg__margin--bottom-auto {
+    @media screen and (min-width: $lg_device) {
+        margin-bottom: auto;
+    }
 }
