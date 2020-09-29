@@ -1,6 +1,4 @@
 .testimonials {
-    // @extend .wrapper;
-
     background-color: #f4f4f4;
     width: 100%;
     overflow: hidden;
@@ -31,8 +29,16 @@
     fill: #d0cece;
 }
 
+.testimonials.reversed .zen-carousel button svg {
+    fill: #ffffff;
+}
+
 .zen-carousel button.active svg {
     fill: $secondary_color;
+}
+
+.testimonials.reversed .zen-carousel button.active svg {
+    fill: $primary_color_dark;
 }
 
 .slide .large-devices {
@@ -100,5 +106,27 @@
         grid-row: 1 / span 6;
         align-self: stretch;
         object-fit: cover;
+    }
+}
+
+.testimonials.reversed .slide .testimonial__author {
+    @extend .text--light;
+}
+
+.testimonials.reversed {
+    position: relative;
+    background-color: #fff;
+
+    .wrapper {
+        position: relative;
+        z-index: 100;
+    }
+    .bg--light {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 50%;
     }
 }
