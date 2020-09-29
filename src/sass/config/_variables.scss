@@ -16,10 +16,10 @@ $xxl_device: 1440px;
 $grid_unit: 4px;
 $grid_gap: $grid_unit * 7;
 $sm__grid_gap: $grid_unit * 7;
-$md__grid_gap: $grid_unit * 9;
-$lg__grid_gap: $grid_unit * 10;
-$xl__grid_gap: $grid_unit * 12;
-$xxl__grid_gap: $grid_unit * 14;
+$md__grid_gap: $grid_unit * 7;
+$lg__grid_gap: $grid_unit * 7;
+$xl__grid_gap: $grid_unit * 7;
+$xxl__grid_gap: $grid_unit * 7;
 
 $grid_units: (
     "0": 0,

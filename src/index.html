@@ -214,3 +214,202 @@ layout: base.html
         </div>
     </div>
 </section>
+
+<section class="bg--light">
+    <div class="wrapper">
+        <h2 class="text--center lg__margin--bottom-15">Comment ça marche?</h2>
+
+        <!-- first section -->
+        <div class="flex align--start margin--bottom-15 lg__margin--bottom-25">
+            <img
+                class="col-10 col-offset-1 lg__col-4 lg__col-offset-0 margin--bottom-10"
+                src="/assets/images/comment-ca-marche-1.png"
+                alt=""
+            />
+            <div class="col-12 lg__col-8 no-padding">
+                <h2 class="lg__text--2xl col-12 margin--bottom-5">
+                    MedicWise récupère les données du patient
+                </h2>
+                <h3 class="text--md text--primary col-12">Automatiquement</h3>
+                <div class="flex margin--bottom-10">
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/DMP %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Données de parcours (achat de médicaments,
+                                réalisation d’actes...)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/ALD %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Antécédents médicaux (ALD...)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Biologie %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Résultats de biologie
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Watch %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Données issus d’objets connectés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text--md text--secondary col-12">
+                    Saisit par le patient dans l’appli mobile
+                </h3>
+                <div class="flex">
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Tension %}
+                            <p
+                                class="width--full text--sm margin--bottom-0 margin--top-3"
+                            >
+                                Tension
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Poids %}
+                            <p
+                                class="width--full text--sm margin--bottom-0 margin--top-3"
+                            >
+                                Poids
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Temperature %}
+                            <p
+                                class="width--full text--sm margin--bottom-0 margin--top-3"
+                            >
+                                Température
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <div
+            class="flex--reverse align--start margin--bottom-15 lg__margin--bottom-25"
+        >
+            <img
+                class="col-10 col-offset-1 lg__col-6 lg__col-offset-0 margin--bottom-10"
+                src="/assets/images/comment-ca-marche-2.png"
+                alt=""
+            />
+            <div class="col-12 lg__col-6 no-padding">
+                <h2 class="lg__text--2xl col-12 margin--bottom-5">
+                    L’équipe médicale a accès aux données pertinentes est
+                    alertée en cas de résultats inquiétants
+                </h2>
+                <div class="flex margin--bottom-10">
+                    <div class="col-6 lg__col-4 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/IA %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                IA: de modèles prédictifs qui identifie des
+                                patients à risques
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-4 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Notification %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                IA: de modèles prédictifs qui identifie des
+                                patients à risques
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- third section -->
+        <div class="flex align--start margin--bottom-15 lg__margin--bottom-25">
+            <img
+                class="col-10 col-offset-1 lg__col-4 lg__col-offset-0 margin--bottom-10"
+                src="/assets/images/comment-ca-marche-3.png"
+                alt=""
+            />
+            <div class="col-12 lg__col-8 no-padding">
+                <h2 class="lg__text--2xl col-12 margin--bottom-5">
+                    Le médecin adapte le plan de soins
+                </h2>
+                <div class="flex margin--bottom-10">
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Ordonnonce %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Ordonnonce par l’appli mobile
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/communiquer %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                communiquer facilement avec les patients
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 lg__col-3 margin--bottom-4">
+                        <div
+                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
+                        >
+                            {% include snippets/Teleconsult %}
+                            <p class="text--sm margin--bottom-0 margin--top-3">
+                                Téléconsultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -82,3 +82,16 @@ hr {
 .radius-extra-br {
     border-radius: 5px 5px 50px 5px;
 }
+
+.flex [class*="col-"].no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.height--full {
+    height: 100%;
+}
+
+.width--full {
+    width: 100%;
+}
