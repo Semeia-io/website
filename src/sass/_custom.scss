@@ -12,8 +12,12 @@ button {
 
 .button-tertiary {
     @extend .button-secondary;
-    background-color: $primary_color_extra_dark;
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
 }
 
 button {
@@ -72,4 +76,9 @@ hr {
     @media screen and (min-width: $lg_device) {
         margin-bottom: auto;
     }
+}
+
+// BORDER RADIUS
+.radius-extra-br {
+    border-radius: 5px 5px 50px 5px;
 }
