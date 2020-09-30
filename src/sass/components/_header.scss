@@ -1,5 +1,18 @@
+// compensate for fixed header
+body {
+    padding-top: 68px;
+
+    @media screen and (min-width: $lg_device) {
+        padding-top: 89px;
+    }
+}
+
 .main-header {
+    position: fixed;
+    top: 0;
     background-color: $primary_color_dark;
+    z-index: 100;
+    width: 100%;
 }
 
 .logo {
@@ -8,16 +21,18 @@
 
 .main-nav {
     position: absolute;
-    bottom: 100%;
+    bottom: 100vh;
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     background-color: $primary_color_dark;
 
     &.open {
         bottom: 0;
+        position: fixed;
+        overflow-y: scroll;
     }
 }
 
