@@ -23,6 +23,12 @@
     @extend .padding--y-0;
     width: 100%;
     flex-shrink: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    &.active {
+        opacity: 1;
+    }
 }
 
 .zen-carousel button svg {
