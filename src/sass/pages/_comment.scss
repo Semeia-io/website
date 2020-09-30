@@ -1,0 +1,35 @@
+.comment-hero {
+    position: relative;
+    .image-wrapper {
+        padding-top: 26%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.comment-info {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        height: calc(100% - 60px);
+        width: 30%;
+        background: $primary_color_dark;
+
+        @media screen and (min-width: $xxl_device) {
+            height: calc(100% - 80px);
+        }
+    }
+
+    .bg {
+        border-radius: 0 0 0 80px;
+        z-index: -1;
+    }
+}
