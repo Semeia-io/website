@@ -88,7 +88,7 @@
     column-gap: 20px;
 
     .testimonial__text {
-        grid-column: 2 / span 8;
+        grid-column: 3 / span 6;
         grid-row: 2 / span 4;
         z-index: 10;
         align-self: end;
@@ -108,7 +108,7 @@
 
     .testimonail__image {
         @extend .corners--rounded;
-        grid-column: 9 / span 3;
+        grid-column: 8 / span 3;
         grid-row: 1 / span 6;
         align-self: stretch;
         object-fit: cover;
