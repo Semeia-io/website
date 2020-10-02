@@ -1,19 +1,22 @@
-<header class="main-header">
+<header id="main-header" class="main-header">
     <div class="wrapper padding--y-4">
         <div class="add-padding">
             <div class="flex justify--between align--center">
-                <div class="logo">
-                    <img alt="" src="/assets/svgs/logo.svg">
-                </div>
+                <a href="/" class="logo">
+                    <img alt="" src="/assets/svgs/logo.svg" />
+                </a>
 
-                <button class="menu-toggle mobile-menu-open" data-close="close-main-nav" data-target="main-nav" data-type="dropdown">
-                    <img alt="main-nav" src="/assets/svgs/bars.svg" srcset="">
+                <button
+                    class="menu-toggle mobile-menu-open"
+                    data-close="close-main-nav"
+                    data-target="main-nav"
+                    data-type="dropdown"
+                >
+                    <img alt="main-nav" src="/assets/svgs/bars.svg" srcset="" />
                 </button>
-                {% include components/mobile-nav %}
-                {% include components/desktop-nav %}
-
+                {% include components/mobile-nav %} {% include
+                components/desktop-nav %}
             </div>
         </div>
-
     </div>
 </header>

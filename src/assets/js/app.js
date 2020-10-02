@@ -210,3 +210,15 @@ class Carousel {
         }
     });
 })();
+
+(function () {
+    const header = document.getElementById("main-header");
+    window.addEventListener("scroll", () => {
+        const yOffset = window.pageYOffset;
+        if (yOffset > 10 && !header.classList.contains("shadow--light")) {
+            header.classList.add("shadow--light");
+        } else if (yOffset < 10 && header.classList.contains("shadow--light")) {
+            header.classList.remove("shadow--light");
+        }
+    });
+})();
