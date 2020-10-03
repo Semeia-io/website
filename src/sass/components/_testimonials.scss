@@ -83,35 +83,34 @@
 }
 
 .slide .large-devices {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 20px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
 
     .testimonial__text {
-        grid-column: 3 / span 6;
-        grid-row: 2 / span 4;
-        z-index: 10;
-        align-self: end;
+        width: 85%;
+        margin-top: 40px;
+        padding: 40px;
+        background-color: #fff;
         @extend .heading;
         @extend .text--xl;
-        background-color: #fff;
-        padding: 60px 24px;
-        border-radius: 4px 4px 80px 4px;
+        border-radius: 5px 5px 80px 5px;
     }
 
     .testimonial__author {
-        grid-column: 2 / span 7;
-        grid-row: 6 / span 1;
-        @extend .text--secondary;
-        @extend .text--right;
+        width: 80%;
+        text-align: right;
+        color: $secondary_color;
+        padding-right: 28px;
     }
 
     .testimonail__image {
-        @extend .corners--rounded;
-        grid-column: 8 / span 3;
-        grid-row: 1 / span 6;
-        align-self: stretch;
-        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: -1;
+        width: 20%;
+        transform: translateY(-50%);
     }
 }
 
