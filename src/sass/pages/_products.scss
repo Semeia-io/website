@@ -1,0 +1,27 @@
+.product-page .product__logo svg {
+  width: 60px;
+  fill: #fc1369;
+}
+@media screen and (min-width: 1024px) {
+  .product-page .product__logo svg {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .product-page .app-preview__wrapper {
+    padding-top: 27.5%;
+  }
+  .product-page img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 20px);
+  }
+  .product-page .demo-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,137 +1,149 @@
 .testimonials {
-    background-color: #f4f4f4;
-    width: 100%;
-    overflow: hidden;
+  background-color: #f4f4f4;
+  width: 100%;
+  overflow: hidden;
 }
 .testimonials .wrapper {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .zen-carousel .zen-carousel__track {
-    display: flex;
-    transition: all 0.2s ease-in;
-    pointer-events: none;
+  display: flex;
+  transition: all 0.2s ease-in;
+  pointer-events: none;
 }
 
 .zen-carousel.dragging .zen-carousel__track {
-    transition: none;
+  transition: none;
 }
 
 .zen-carousel .slide {
-    @extend .wrapper;
-    @extend .padding--y-0;
-    width: 100%;
-    flex-shrink: 0;
-    opacity: 0;
-    transition: all 0.3s ease-in;
+  @extend .wrapper;
+  @extend .padding--y-0;
+  width: 100%;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
 
-    &.active {
-        opacity: 1;
-    }
+  &.active {
+    opacity: 1;
+  }
 }
 
 .zen-carousel button svg {
-    fill: #d0cece;
+  fill: #d0cece;
 }
 
 .testimonials.reversed .zen-carousel button svg {
-    fill: #ffffff;
+  fill: #ffffff;
 }
 
 .zen-carousel button.active svg {
-    fill: $secondary_color;
+  fill: $secondary_color;
 }
 
 .testimonials.reversed .zen-carousel button.active svg {
-    fill: $primary_color_dark;
+  fill: $primary_color_dark;
 }
 
 .slide .large-devices {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: $lg_device) {
-    .slide .small-devices {
-        display: none;
-    }
-    .slide .large-devices {
-        display: grid;
-    }
+  .slide .small-devices {
+    display: none;
+  }
+  .slide .large-devices {
+    display: grid;
+  }
 }
 
 .small-devices {
-    .testimonial__text {
-        @extend .text--xl;
-        @extend .heading;
-        @extend .text--center;
-        @extend .margin--bottom-7;
-    }
+  .testimonial__text {
+    @extend .text--xl;
+    @extend .heading;
+    @extend .text--center;
+    @extend .margin--bottom-7;
+  }
 
-    .testimonail__image {
-        @extend .margin--x-auto;
-        @extend .block;
-        @extend .margin--bottom-5;
-        @extend .corners--rounded;
-        max-width: 50%;
-    }
+  .testimonail__image {
+    @extend .margin--x-auto;
+    @extend .block;
+    @extend .margin--bottom-5;
+    @extend .corners--rounded;
+    max-width: 50%;
+  }
 
-    .testimonial__author {
-        @extend .text--center;
-        @extend .text--secondary;
-    }
+  .testimonial__author {
+    @extend .text--center;
+    @extend .text--secondary;
+  }
 }
 
 .slide .large-devices {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
 
-    .testimonial__text {
-        width: 85%;
-        margin-top: 40px;
-        padding: 40px;
-        background-color: #fff;
-        @extend .heading;
-        @extend .text--xl;
-        border-radius: 5px 5px 80px 5px;
-    }
+  .testimonial__text {
+    width: 85%;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #fff;
+    @extend .heading;
+    @extend .text--xl;
+    border-radius: 5px 5px 80px 5px;
+  }
 
-    .testimonial__author {
-        width: 80%;
-        text-align: right;
-        color: $secondary_color;
-        padding-right: 28px;
-    }
+  .testimonial__author {
+    width: 80%;
+    text-align: right;
+    color: $secondary_color;
+    padding-right: 28px;
+  }
 
-    .testimonail__image {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        z-index: -1;
-        width: 20%;
-        transform: translateY(-50%);
-    }
+  .testimonail__image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+    width: 20%;
+    transform: translateY(-50%);
+  }
 }
 
 .testimonials.reversed .slide .testimonial__author {
-    @extend .text--light;
+  @extend .text--light;
 }
 
 .testimonials.reversed {
-    position: relative;
-    background-color: #fff;
+  position: relative;
+  background-color: #fff;
 
-    .wrapper {
-        position: relative;
-        z-index: 100;
-    }
-    .bg--light {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        width: 100%;
-        height: 50%;
-    }
+  .wrapper {
+    position: relative;
+    z-index: 100;
+  }
+  .bg--light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.testimonials-no-photo .zen-carousel {
+  overflow-x: hidden;
+
+  button.active svg {
+    fill: $primary_color_dark;
+  }
+
+  .bg--light {
+    border-radius: 5px 5px 80px 5px;
+  }
 }
