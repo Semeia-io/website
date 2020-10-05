@@ -1,0 +1,36 @@
+---
+layout: base.html
+---
+
+<section class="wrapper">
+	<div class="flex align--start">
+		<div class="col-12 margin--bottom-6 lg__margin--bottom-12">
+			<h1 class="text--primary text--center">Actualités</h1>
+		</div>
+			
+    	<div class="col-12 lg__col-8 lg__flex ">
+    		{% for post in posts %}
+			<a class="margin--bottom-6 {% if forloop.index0 == 0 %} lg__col-12 {% else %} lg__col-6 {% endif %}" href="/posts/{{ post.permalink }}">
+				<article class="bg--light corners--rounded height--full">
+					<div class="aspect-ratio--16-by-5">
+						<img class="width--full" src="{{ post.featured_image.url }}">
+					</div>
+					<div class="padding--4">
+						<h2>{{ post.title }}</h2>
+						{% if forloop.index0 == 0 %}
+							<p class="hidden lg__block">
+								{{ post.excerpt }}
+							</p>
+						{% endif %}
+						<p class="text--neutral-light text--sm">{{ post.date }} - {{ post.author }}</p>
+					</div>					
+    			</article>
+    		</a>
+   			{% endfor %}
+		</div>
+
+		<div class="hidden lg__block lg__col-4">
+			<a class="twitter-timeline" data-height="1080" href="https://twitter.com/Semeia_io?ref_src=twsrc%5Etfw">Tweets by Semeia_io</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+		</div>		
+    </div>
+</section>

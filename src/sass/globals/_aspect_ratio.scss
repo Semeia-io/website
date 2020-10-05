@@ -6,31 +6,34 @@
 
 @mixin aspect-ratio-child {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
+  /* height: 100%; */
+  object-fit: cover; 
+  /* transform: translate(-50%, 0); */
 }
 
 .aspect-ratio--1-by-1 { @include aspect-ratio; padding-top: 100%; }
 .aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
 .aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
 .aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+.aspect-ratio--16-by-5 { @include aspect-ratio; padding-top: 31.25%; }
 
-.aspect-ratio--1-by-1 img, .aspect-ratio--4-by-3 img, .aspect-ratio--3-by-4 img, .aspect-ratio--16-by-9 img { @include aspect-ratio-child }
-.sm__aspect-ratio--1-by-1 img, .sm__aspect-ratio--4-by-3 img, .sm__aspect-ratio--3-by-4 img, .sm__aspect-ratio--16-by-9 img { @include aspect-ratio-child }
-.md__aspect-ratio--1-by-1 img, .md__aspect-ratio--4-by-3 img, .md__aspect-ratio--3-by-4 img, .md__aspect-ratio--16-by-9 img { @include aspect-ratio-child }
-.lg__aspect-ratio--1-by-1 img, .lg__aspect-ratio--4-by-3 img, .lg__aspect-ratio--3-by-4 img, .lg__aspect-ratio--16-by-9 img { @include aspect-ratio-child }
-.xl__aspect-ratio--1-by-1 img, .xl__aspect-ratio--4-by-3 img, .xl__aspect-ratio--3-by-4 img, .xl__aspect-ratio--16-by-9 img { @include aspect-ratio-child }
-.xxl__aspect-ratio--1-by-1 img, .xxl__aspect-ratio--4-by-3 img, .xxl__aspect-ratio--3-by-4 img, .xxl__aspect-ratio--16-by-9 img { @include aspect-ratio-child }
+
+.aspect-ratio--1-by-1 img, .aspect-ratio--4-by-3 img, .aspect-ratio--3-by-4 img, .aspect-ratio--16-by-9, .aspect-ratio--16-by-5 img  { @include aspect-ratio-child }
+.sm__aspect-ratio--1-by-1 img, .sm__aspect-ratio--4-by-3 img, .sm__aspect-ratio--3-by-4 img, .sm__aspect-ratio--16-by-9, .sm__aspect-ratio--16-by-5 img { @include aspect-ratio-child }
+.md__aspect-ratio--1-by-1 img, .md__aspect-ratio--4-by-3 img, .md__aspect-ratio--3-by-4 img, .md__aspect-ratio--16-by-9, .md__aspect-ratio--16-by-5 img { @include aspect-ratio-child }
+.lg__aspect-ratio--1-by-1 img, .lg__aspect-ratio--4-by-3 img, .lg__aspect-ratio--3-by-4 img, .lg__aspect-ratio--16-by-9, .lg__aspect-ratio--16-by-5 img { @include aspect-ratio-child }
+.xl__aspect-ratio--1-by-1 img, .xl__aspect-ratio--4-by-3 img, .xl__aspect-ratio--3-by-4 img, .xl__aspect-ratio--16-by-9, .xl__aspect-ratio--16-by-5 img { @include aspect-ratio-child }
+.xxl__aspect-ratio--1-by-1 img, .xxl__aspect-ratio--4-by-3 img, .xxl__aspect-ratio--3-by-4 img, .xxl__aspect-ratio--16-by-9, .xxl__aspect-ratio--16-by-5 img { @include aspect-ratio-child }
 
 @media screen and (min-width: $sm_device) {
   .sm__aspect-ratio--1-by-1 { @include aspect-ratio; padding-top: 100%; }
   .sm__aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
   .sm__aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
   .sm__aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+  .sm__aspect-ratio--16-by-5 { @include aspect-ratio padding-top: 31.25%; }
 }
 
 @media screen and (min-width: $md_device) {
@@ -38,6 +41,7 @@
   .md__aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
   .md__aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
   .md__aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+  .md__aspect-ratio--16-by-5 { @include aspect-ratio padding-top: 31.25%; }
 }
 
 @media screen and (min-width: $lg_device) {
@@ -45,6 +49,7 @@
   .lg__aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
   .lg__aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
   .lg__aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+  .lg__aspect-ratio--16-by-5 { @include aspect-ratio padding-top: 31.25%; }
 }
 
 @media screen and (min-width: $xl_device) {
@@ -52,6 +57,7 @@
   .xl__aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
   .xl__aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
   .xl__aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+  .xl__aspect-ratio--16-by-5 { @include aspect-ratio padding-top: 31.25%; }
 }
 
 @media screen and (min-width: $xxl_device) {
@@ -59,4 +65,5 @@
   .xxl__aspect-ratio--4-by-3 { @include aspect-ratio; padding-top: 75%; }
   .xxl__aspect-ratio--3-by-4 { @include aspect-ratio; padding-top: 133%; }
   .xxl__aspect-ratio--16-by-9 { @include aspect-ratio; padding-top: 56%; }
+  .xxl__aspect-ratio--16-by-5 { @include aspect-ratio padding-top: 31.25%; }
 }
