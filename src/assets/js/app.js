@@ -246,12 +246,35 @@ class Carousel {
 
 (function () {
     const header = document.getElementById("main-header");
+    const scrollup = document.getElementById("scroll-up");
     window.addEventListener("scroll", () => {
         const yOffset = window.pageYOffset;
-        if (yOffset > 10 && !header.classList.contains("shadow--light")) {
+		// this is for header shadow
+         if (yOffset > 10 && !header.classList.contains("shadow--light")) {
             header.classList.add("shadow--light");
         } else if (yOffset < 10 && header.classList.contains("shadow--light")) {
             header.classList.remove("shadow--light");
         }
+
+        if (scrollup) {
+        	if (yOffset > 1000 && !scrollup.classList.contains('show')) {
+        		scrollup.classList.add('show');
+        	} else if (yOffset < 1000 && scrollup.classList.contains('show')) {
+        		scrollup.classList.remove('show');
+        	}
+        }
     });
 })();
+
+
+function initScrollup () {
+    const scrollup = document.getElementById("scroll-up");
+	if (scrollup) {
+		scrollup.addEventListener('click', () => {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+		});
+	}
+}
+
+initScrollup();

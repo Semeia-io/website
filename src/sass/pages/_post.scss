@@ -1,0 +1,39 @@
+.post__author {
+	display: flex;
+	align-items: flex-end;
+	border-top: 1px solid $neutral_color_extra_light;
+	padding-top: $grid_unit * 6;
+}
+
+.post__author-image {
+	max-width: 120px;
+	margin-right: $grid_unit * 4;
+}
+
+.post__author-details {
+	width: 100%;
+}
+
+.post .button-tertiary {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	min-width: 50px;
+
+	&.show {
+		display: block;
+	}
+
+	svg {
+		margin-bottom: 2px;
+	}
+
+	.scroll-up__text {
+		display: none;
+
+		@media screen and (min-width: $lg_device) {
+			display: inline-block;
+		}
+	}
+}

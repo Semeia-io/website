@@ -1,0 +1,38 @@
+---
+layout: base.html
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: /posts/{{ post.permalink }}/index.html
+---
+
+<section class="wrapper post">
+	<div class="flex">
+		<div class="col-12 lg__col-8 lg__col-offset-2 margin--bottom-7">
+			<img class="width--full margin--bottom-2" src="{{ post.featured_image.url }}" alt="{{ post.featured_image.caption }}" >
+			<p class="text--center text--sm text--neutral-light">{{ post.featured_image.caption }}</p>
+		</div>
+		<div class="col-12 lg__col-8 lg__col-offset-2">
+			<h1>{{ post.title }}</h1>
+			<p class="text--sm text--neutral-light margin--bottom-8">{{ post.date }} - {{ post.author.name }}</p>
+			{{ post.content }}
+		</div>
+
+		{% if post.author %}
+		<div class="post__author col-12 lg__col-8 lg__col-offset-2">
+			<img class="corners--rounded post__author-image" src="{{ post.author.image }}" alt="{{ post.author.name }}" >
+			<div class="post__author-details">
+				<p class="text--lg margin--bottom-0 semibold">{{ post.author.name }}</p>
+				<p class="text--sm margin--bottom-0">{{ post.author.position }}</p>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+
+	<button id="scroll-up" href="{{ link }}" class="button-tertiary">
+	<span class="scroll-up__text">retour Haut</span>
+	{% include snippets/chevron-up %}
+	</button>
+</section>
+
