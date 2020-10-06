@@ -1,0 +1,21 @@
+<nav>
+    <ul class="pagination__list" class="pagination">
+        {% for pageEntry in pagination.pages %}
+        {% if forloop.length == 1 %}
+            {% continue %}
+        {% endif %}
+        <li class="pagination__item">
+            {% if page.url == pagination.hrefs[forloop.index0] %}
+            <a
+                href="{{ pagination.hrefs[forloop.index0] }}"
+                class="pagination__link active">
+                {{ forloop.index }}
+            </a>
+            {% else %}
+
+            <a href="{{ pagination.hrefs[forloop.index0] }}" class="pagination__link">{{ forloop.index }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

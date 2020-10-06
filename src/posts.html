@@ -1,5 +1,8 @@
 ---
 layout: base.html
+pagination:
+  data: posts
+  size: 12
 ---
 
 <section class="wrapper">
@@ -8,8 +11,8 @@ layout: base.html
 			<h1 class="text--primary text--center">Actualités</h1>
 		</div>
 			
-    	<div class="col-12 lg__col-8 lg__flex ">
-    		{% for post in posts %}
+    	<div class="col-12 lg__col-8 lg__flex height--full">
+    		{% for post in pagination.items %}
 			<a class="margin--bottom-6 {% if forloop.index0 == 0 %} lg__col-12 {% else %} lg__col-6 {% endif %}" href="/posts/{{ post.permalink }}">
 				<article class="bg--light corners--rounded height--full">
 					<div class="aspect-ratio--16-by-5">
@@ -27,6 +30,10 @@ layout: base.html
     			</article>
     		</a>
    			{% endfor %}
+
+			<div class="pagination__nav col-12">
+				{% include components/pagination %}
+			</div>
 		</div>
 
 		<div class="hidden lg__block lg__col-4">
@@ -34,3 +41,5 @@ layout: base.html
 		</div>		
     </div>
 </section>
+
+

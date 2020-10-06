@@ -1,0 +1,18 @@
+.pagination__nav {
+	margin-top: auto;
+}
+.pagination__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination__link {
+	display: block;
+	padding: $grid_unit * 2;
+	color: $neutral_color_light;
+
+	&.active {
+		color: $neutral_color_extra_dark;
+	}
+}
