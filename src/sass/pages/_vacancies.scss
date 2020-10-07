@@ -1,0 +1,26 @@
+.vacancy__item {
+	background-color: $neutral_color_extra_light;
+	padding: 12px 24px;
+
+	@media screen and (min-width: $md_device) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.vacancy__item-content {
+	display: flex;
+	flex-wrap: wrap;
+	
+	h3 {
+		width: 100%;
+	}
+}
+.vacancy__tag {
+	color: #fff;
+	text-align: center;
+	padding: 2px 6px;
+	background-color: $neutral_color;
+	border-radius: 4px;
+}

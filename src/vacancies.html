@@ -1,0 +1,105 @@
+---
+layout: base.html
+---
+
+<section class="bg--light">
+	<div class="wrapper">
+		<div class="flex">
+			<div class="col-12 margin--bottom-6 lg__margin--bottom-10">
+				<h1 class="text--center text--primary lg__text--2xl">Rejoindre notre équipe</h1>
+			</div> 
+		</div>
+
+		<div class="flex--reverse align--center margin--bottom-20">
+			<div class="col-12 lg__col-6 margin--bottom-4 lg__margin--bottom-0">
+				<img class="image--rounded-corners" src="/assets/images/vacancies.jpg" alt="vacancies at Semeia" > 
+			</div>
+
+			<div class="col-12 lg__col-6">
+				<p>
+					Depuis 2017 Sêmeia développe des solutions novatrices de suivi et d’accompagnement des patients. Nos équipes débordent d’énergie et d’idées pour améliorer la qualité de vie des patients et offrir une prise en charge optimisée par les équipes de soins. 
+				</p>
+				<p>
+					Rejoins-nous à <span class="semibold">Paris</span> ou à <span class="semibold">Toulouse</span> et contribue avec nous à l’avénement de la e-santé !
+				</p>
+			</div>
+		</div>
+
+		<div class="flex justify--center">
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/swile.png" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Ticket Restaurant
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/alan.png" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Mutuelle
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/team.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Team Up bimensuel
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column align--start justify--between">
+					<img class="col-12" src="/assets/images/vacancies/pair.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Pair working
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/teletravail.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Télétravail régulier
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="wrapper">
+	<div class="flex">
+		<div class="col-12 margin--bottom-10">
+			<h2 class="md__text--2xl">Les offres d'emploi</h2>
+		</div>
+
+		<div class="col-12">
+			{% if vacancies %}
+				{% for vacancy in vacancies %}
+
+					<div class="vacancy__item">
+						<div class="vacancy__item-content">
+							<h3 class="md__text--xl">{{ vacancy.title }}</h3>
+							<div class="vacancy__tag margin--right-2">{{ vacancy.department }}</div>
+							<div class="vacancy__tag margin--right-2">{{ vacancy.location }}</div>
+							<div class="vacancy__tag margin--right-2">{{ vacancy.contract }}</div>
+						</div>
+						<div class="vacancy__item-action margin--top-6 md__margin--top-0">
+							<a class="button-primary" href="{{ vacancy.permalink }}">Voir poste</a>
+						</div>
+					</div>
+							
+				{% endfor %}
+			{% else %}
+				<p>Currently we do not have any vacancies</p>
+			{% endif %}
+		</div>
+	</div>
+</section>
