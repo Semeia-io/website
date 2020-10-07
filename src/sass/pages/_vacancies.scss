@@ -23,4 +23,22 @@
 	padding: 2px 6px;
 	background-color: $neutral_color;
 	border-radius: 4px;
+	display: inline-block;
 }
+
+// used in vacancy single
+.vacancy__content {
+	h2 {
+		margin-top: 36px;
+		padding-bottom: 12px;
+		border-bottom: 2px solid $secondary_color;
+		@extend .lg__text--2xl;
+	}
+
+	h3 {
+		@extend .body;
+		@extend .text--lg;
+		margin-top: 20px;
+	}
+}
+

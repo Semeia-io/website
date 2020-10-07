@@ -1,0 +1,102 @@
+---
+layout: base.html
+pagination:
+  data: vacancies
+  size: 1
+  alias: vacancy
+permalink: /vacancies/{{ vacancy.permalink }}/index.html
+---
+
+ <section class="bg--light">
+	<div class="wrapper vacancy__hero">
+		<div class="flex">
+			<div class="col-12 md__col-8 lg__col-offset-1 lg__col-7 margin--bottom-6">
+				<h1 class="text--primary md__text--2xl">{{ vacancy.title }}</h1>
+				<div class="vacancy__tag margin--right-2">{{ vacancy.department }}</div>
+				<div class="vacancy__tag margin--right-2">{{ vacancy.contract }}</div>
+				<div class="vacancy__tag margin--right-2">{{ vacancy.location }}</div>
+			</div>
+
+			<div class="col-12 md__col-4 lg__col-3">
+				<p>Pour postuler, merci d'adresser un CV et une lettre de motivation</p>
+				<a href="mailto:chris@mejlak.com?subject=candidature au poste {{ vacancy.title }}"
+				   class="button-primary">Postuler</a>
+			</div>
+		</div>
+	</div>
+ </section>
+
+ <section class="wrapper vacancy__content">
+	<div class="flex">
+		<div class="margin--bottom-10 col-12 lg__col-offset-1 lg__col-10">
+			{{ vacancy.content }}
+		</div>
+		<div class="col-12 lg__col-offset-1 lg__col-10">
+			<h3>Pour postuler, merci d'adresser un CV et une lettre de motivation à contact@semeia.io</h3>
+			<a href="mailto:chris@mejlak.com?subject=candidature au poste {{ vacancy.title }}"
+				   class="button-primary">Postuler</a>			
+		</div>		
+	</div>
+ </section>
+
+ 
+<section class="bg--light">
+	<div class="wrapper">
+		<div class="flex justify--center">
+		
+			<div class="col-12 margin--bottom-10">
+				<h2 class="text--center lg__text--2xl">Les avantages</h2>
+			</div>
+			
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/swile.png" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Ticket Restaurant
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/alan.png" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Mutuelle
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/team.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Team Up bimensuel
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column align--start justify--between">
+					<img class="col-12" src="/assets/images/vacancies/pair.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Pair working
+					</p>
+				</div>
+			</div>
+
+			<div class="col-6 md__col-4 lg__col-2 margin--bottom-3">
+				<div class="bg--white height--full flex--column justify--between align--start">
+					<img class="col-12" src="/assets/images/vacancies/teletravail.svg" >
+					<p class="col-12 text--md semibold leading--tight text--center">
+						Télétravail régulier
+					</p>
+				</div>
+			</div>
+
+			<div class="col-12 text--center margin--top-10">
+				{% include components/button-tertiary text: "voir les offres d'emploi", link: "/vacancies/" %}
+			</div>
+			
+		</div>
+	</div>
+</section>
