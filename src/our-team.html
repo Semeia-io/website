@@ -4,9 +4,9 @@ layout: base.html
 
 <section class="wrapper">
 	<div class="flex">
-		<div class="col-12 margin--bottom-10">
-			<h1 class="text--primary text--center margin--bottom-4">Notre équipe</h1>
-			<p class="text--center heading">
+		<div class="col-12 lg__col-offset-1 lg__col-10 margin--bottom-10">
+			<h1 class="text--primary text--center margin--bottom-4 lg__text--2xl">Notre équipe</h1>
+			<p class="text--center heading lg__text--lg">
 				Sêmeia est née en avril 2017 à l’initiative de Pierre Hornus, Mathieu Godart et Daniel Szeftel suite au premier prix remportéauprès de l’Assurance Maladie.
 			</p>
 		</div>
@@ -142,3 +142,63 @@ layout: base.html
 		</div>
 	</div>
 </section>
+
+
+<section class="bg--light">
+	<div class="wrapper">
+		<div class="flex">
+			<div class="col-12 margin--bottom-12">
+				<h2 class="text--center lg__text--2xl">Nos Partenaires</h2>
+			</div>
+		</div>
+
+		<div class="flex justify--center align--center">
+			<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/maladie.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 margin--bottom-8 md__margin--x-4 xl__margin--x-6"
+                src="/assets/images/our-team/drees.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/resah.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/ovh.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/medicen.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/capgemini.png"
+            />
+
+           	<img
+                alt=""
+                class="margin--x-2 md__margin--x-4 margin--bottom-8 xl__margin--x-6"
+                src="/assets/images/our-team/snitem.png"
+            />
+		</div>
+	</div>
+</section>
+
+{% include components/testimonials-reversed %} {% include components/cta
+heading: "Découvrez comment Sêmeia peut vous aider", link_url: "#",
+link_text:"Essayez la demo" %}
+
