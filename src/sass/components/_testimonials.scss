@@ -35,6 +35,10 @@
   fill: #d0cece;
 }
 
+.testimonials.reversed .wrapper {
+	max-width: 1101px;
+}
+
 .testimonials.reversed .zen-carousel button svg {
   fill: #ffffff;
 }
@@ -84,7 +88,7 @@
 
 .slide .large-devices {
   position: relative;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 
   .testimonial__text {

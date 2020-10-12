@@ -17,6 +17,10 @@ body {
 
 .logo {
     width: 105px;
+
+    @media screen and (min-width: $lg_device) {
+    	width: 125px;
+    }
 }
 
 .main-nav {

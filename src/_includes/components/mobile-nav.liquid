@@ -66,7 +66,24 @@
             <a class="semibold" href="/posts/">Actualités</a>
         </li>
         <li>
-            <a class="semibold" href="/our-team/">Notre équipe</a>
+            <button
+                class="toggle-button--with-caret"
+                data-target="adn"
+                data-type="dropdown"
+            >
+                <span class="flex align--center">
+                    <span class="block margin--right-2 semibold">Notre Adn</span>
+                    <img alt="" src="/assets/svgs/caret-down.svg" />
+                </span>
+            </button>
+            <ul class="fonctionnement-nav" id="adn">
+                <li>
+                    <a class="semibold" href="/our-team/">Notre équipe</a>
+                </li>
+                <li>
+                    <a class="semibold" href="/vacancies/">Nous rejoindre</a>
+                </li>
+            </ul>
         </li>
         <li class="text--center margin--top-6">
             <a class="button-primary" href="">Essayez la demo</a>

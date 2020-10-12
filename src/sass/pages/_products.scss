@@ -15,11 +15,12 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
+    width: 100%;
   }
   .product-page .demo-button {
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 50%;
     z-index: 10;
     transform: translate(-50%, -50%);
