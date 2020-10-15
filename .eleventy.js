@@ -6,6 +6,7 @@ module.exports = function(config) {
     }
     config.addPlugin(pluginSass, sassPluginOptions);
     config.addPassthroughCopy('./src/assets');
+    config.addPassthroughCopy('./src/favicon.png');
 
     return {
         dir: {
