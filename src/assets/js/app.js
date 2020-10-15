@@ -14,9 +14,10 @@ class Dropdown {
     for (let anchor of this._targetChildren) {
       anchor.tabIndex = stringValue;
     }
-  };
+  }
 
   toggleState = (e) => {
+    console.log("super");
     e.stopPropagation();
     if (!this._isOpen) {
       // we need to open but first let's close all instances
@@ -37,17 +38,29 @@ class Dropdown {
 
     this._el.classList.toggle("open");
     this._target.classList.toggle("open");
-  };
+  }
 }
 
-class MenuToggle extends Dropdown {
+class MenuToggle {
   constructor(el, targetID, closeID) {
-    super(el, targetID);
+    this._el = el;
+    this._target = document.getElementById(targetID);
+    this._targetChildren = document.querySelectorAll(`#${targetID} a`);
+    this._isOpen = false;
+    this._el.addEventListener("click", this.toggleState);
+    this.setTabIndex("-1");
     this._closeEl = document.getElementById(closeID);
     this._closeEl.addEventListener("click", this.toggleState);
   }
 
+  setTabIndex = (stringValue) => {
+    for (let anchor of this._targetChildren) {
+      anchor.tabIndex = stringValue;
+    }
+  }
+
   toggleState = (e) => {
+    console.log(e);
     e.stopPropagation();
     if (!this._isOpen) {
       // we need to open

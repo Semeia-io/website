@@ -9,8 +9,13 @@
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/style.css" />
-        <script src="/assets/js/app.js" defer></script>
+		{% if env.environment == 'production' %}
+        	<link rel="stylesheet" href="/style.min.css" />
+        	<script src="/assets/js/app.min.js" defer></script>
+		{% else  %}        	
+        	<link rel="stylesheet" href="/style.css" />
+        	<script src="/assets/js/app.js" defer></script>
+       	{% endif %}
     </head>
     <body>
         {% include components/header %} {{ content }} {% include
