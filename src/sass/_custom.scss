@@ -10,13 +10,39 @@ button {
     font-family: inherit;
 }
 
+.button-secondary {
+	position: relative;
+	min-width: auto;
+	padding: 0 $grid_unit * 7;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 57px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url("/assets/svgs/chevron-right.svg");
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+}
+
 .button-tertiary {
-    @extend .button-secondary;
+    @extend .button-secondary; 
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
 
     &:hover {
         background-color: rgba(0, 0, 0, 1);
+    }
+
+    &:after {
+    	display: none;
     }
 }
 
