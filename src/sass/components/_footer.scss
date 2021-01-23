@@ -14,3 +14,7 @@ footer {
 .footer__social-icons {
     margin-top: auto;
 }
+
+footer a:hover {
+    color: $secondary_color;
+}

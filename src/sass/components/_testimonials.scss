@@ -119,6 +119,11 @@
   }
 }
 
+.slide .large-devices.static {
+  .testimonial__text { z-index: 1; }
+  .testimonail__image { z-index: 0; }
+}
+
 .testimonials.reversed .slide .testimonial__author {
   @extend .text--light;
 }

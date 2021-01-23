@@ -26,6 +26,10 @@
 	border-bottom: 2px solid $secondary_color;
 }
 
+.team__member.expert .team__member-name {
+	min-height: 64px;
+}
+
 .partners {
 	background: url("/assets/images/our-team/vector-2.svg");
 	background-repeat: no-repeat;
