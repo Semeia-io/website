@@ -86,7 +86,10 @@ layout: base.html
 
 <div class="spacer"></div>
 
-{% include components/testimonials %}
+{% include components/testimonial_static 
+    heading: "“C’est très simple, ça prend peu de temps et ça rend beaucoup de services au médecin et au patient, ce qui est l’essentiel bien sûr.”",
+    author: "Dr Renaud Snanoudj - APHP",
+    image: "/assets/images/dr-renoud.jpg" %}
 
 <section class="home__logos">
     <div class="wrapper">
@@ -484,7 +487,11 @@ layout: base.html
     </div>
 </section>
 
-{% include components/testimonials %} 
+
+{% include components/testimonial_static 
+    heading: "“C’est très simple, ça prend peu de temps et ça rend beaucoup de services au médecin et au patient, ce qui est l’essentiel bien sûr.”",
+    author: "Dr Jérôme Olagne - CHU Strasbourg",
+    image: "/assets/images/testimonials-placeholder.png" %}
 
 {% include components/cta heading: "Découvrez comment Sêmeia peut vous aider", link_url: "#",
 link_text:"Essayez la demo" %}

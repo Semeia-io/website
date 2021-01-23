@@ -252,7 +252,6 @@ class Carousel {
     const carousels = document.querySelectorAll(".zen-carousel");
     for (let carousel of carousels) {
       new Carousel(carousel);
-      console.log(carousel.children[0].children);
     }
   });
 })();
