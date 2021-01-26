@@ -44,68 +44,181 @@ layout: base.html
             </p>
         </div>
 
-        <div class="col-start-1 col-end-3 md__col-end-7 lg__col-start-7 lg__col-end-10 lg__row-start-2">
+        <div class="col-start-1 col-end-3 md__col-end-13 lg__col-start-7 lg__col-end-13 lg__row-start-2">
             <div class="flex justify--center align--center">
                 <img
                     alt=""
-                    class="margin--y-8"
-                    src="/assets/images/logos/Logo_resah.png"
+                    class="margin--bottom-6 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/aphp.png"
                 />
                 <img
                     alt=""
-                    class="margin--y-8"
-                    src="/assets/images/logos/Logo_resah.png"
+                    class="margin--bottom-6 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/hopitaux.png"
                 />
-            </div>    
+                <img
+                    alt=""
+                    class="margin--bottom-6 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/foch.png"
+                />
+                <img
+                    alt=""
+                    class="margin--bottom-6 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/hospitalier.png"
+                />
+            </div>
         </div>
 
-        <div class="col-start-1 col-end-3 md__col-start-7 md__col-end-13 md__row-start-3 lg__col-start-10 lg__col-end-13 lg__row-start-2">
-            <div class="flex justify--center align--center">
-                <img
-                    alt=""
-                    class="margin--y-8"
-                    src="/assets/images/logos/Logo_resah.png"
-                />
-                <img
-                    alt=""
-                    class="margin--y-8"
-                    src="/assets/images/logos/Logo_resah.png"
-                />
+    </div>
+</section>
+
+<div class="bg--secondary">
+    {% include components/testimonial_static 
+        heading: "“NephroWise permet une gestion du patient en ambulatoire en gardant un oeil sur l’évolution de sa santé à domicile.
+        Certains patients ont un état de santé fragile. Grâce à un suivi de la tension et du poids, il devient possible d’éviter des hospitalisations parfois dramatiques.”",
+        author: "Pr Jérôme Olagne - CHU Strasbourg",
+        image: "/assets/images/photo_jo.png" %}
+</div>
+
+<section class="bg--light">
+    <div class="wrapper">
+        <div class="flex">
+            <div class="col-12 lg__col-8 lg__col-offset-2 text--center margin--bottom-12 margin--top-8">
+                <h2 class="text--xl text--center margin--bottom-8">À quoi sert NephroWise ?</h2>
+                <p>
+                    Ne cherchez plus les informations de vos patients : nous assurons la collecte, le regroupement, la supervision des données et la prédiction des risques. Consacrez votre temps à vos patients.
+                </p>
+            </div>
+
+            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/collect.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Collecter automatiquement
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Régulièrement et automatiquement, nous collectons pour vous : 
+
+                        <li class="margin--y-4">Analyses biologiques en ville</li>
+                        <li class="margin--y-4">Tension et de poids (IoT)</li>
+                        <li class="margin--y-4">Historique des consultations</li>
+                        <li class="margin--y-4">Examens réalisés</li>
+                        <li class="margin--y-4">Délivrance des médicaments en ville</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/visualize.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Visualiser en un clin d'œil
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Vous pouvez, sur un tableau de bord unique, appréhender rapidement l’état de santé de votre patient, son plan de soins, l’évolution de ses constantes et de ses résultats de biologie et le déroulé de son parcours de soins.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/warn.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Vous avertir
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Nos algorithmes marqués CE, configurés avec vos seuils, effectuent un premier contrôle pour vous prévenir en cas d'anomalies, sans vous noyer sous les alertes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/predict.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Prédire
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Nos modèles d'IA vous aident à identifier précocément les risques dans le parcours de soins du patient pour mieux les prévenir : observance, hospitalisations, perte de greffon…
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/act.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Agir
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Grâce à ces informations centralisées, vous pouvez facilement au cours, ou entre les consultations :
+                        <li class="margin--y-4">Adapter le traitement et les examens.</li>
+                        <li class="margin--y-4">Générer les prescriptions en un clic.</li>
+                        <li class="margin--y-4">Archiver les infos essentielles sur le patient (résultats structurés et comptes rendus).</li>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-18">
+                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
+                    <img alt="" src="/assets/images/comment/communicate.png"/>
+                </div>
+                <div class="col-12 lg__col-4">
+                    <h3 class="text--lg lg__text--2xl">
+                        Communiquer
+                    </h3>
+                    <hr class="margin--y-7"/>
+                    <p>
+                        Et vous disposez d’un canal unique d’échange avec vos patients pour : 
+                        <li class="margin--y-4">Partager ordonnances, comptes rendus…</li>
+                        <li class="margin--y-4">Centraliser et maîtriser les échanges via un chat simple et sécurisé.</li>
+                        <li class="margin--y-4">Organiser une téléconsultation.</li>
+                        <li class="margin--y-4">Participer à l'éducation sur sa pathologie.</li>
+                    </p>
+                </div>
             </div>
 
         </div>
     </div>
 </section>
 
-{% include components/testimonials heading: "“NephroWise permet une gestion du patient en ambulatoire en gardant un oeil sur l’évolution de sa santé à domicile.
-Certains patients ont un état de santé fragile. Grâce à un suivi de la tension et du poids, il devient possible d’éviter des hospitalisations parfois dramatiques”" %}
-
 <div class="home-advantages">
     <div class="wrapper padding--bottom-0">
+
+        <h2 class="text--xl text--center margin--bottom-12">Financez le suivi de vos patients !</h2>
+
         <div class="lg__grid lg__grid-12-columns">
             <h2 class="margin--top-20 lg__margin--top-0 margin--bottom-4 lg__col-start-3 lg__col-end-7">
-                Le Programme Etapes
+                Patients greffés
             </h2>
             <div class="margin--bottom-15 lg__row-start-2 lg__col-start-3 lg__col-end-7">
                 <hr class="margin--bottom-6"/>
                 <p>
-                    Expérimentez le programme Etapes avec NephroWise !
-                </p>
-                <p>
-                    NephroWise est éligible au programme de télésurveillance Etapes.
-                </p>
-                <p>
-                    La mise en place de l’outil est sans coût pour l’établissement et l’activité de télésurveillance est rémunérée.
+                    NephroWise est éligible au programme de télésurveillance ETAPES. La mise en place de l’outil est sans coût pour l’établissement et l’activité de télésurveillance est rémunérée.
                 </p>
             </div>
             <h2 class="margin--bottom-4 lg__col-start-7 lg__col-end-11">
-                Insuffisance rénale chronique
+                Patients en IRC
             </h2>
             <div class="margin--bottom-15 lg__col-start-7 lg__col-end-11 lg__row-start-2">
                 <hr class="margin--bottom-6"/>
                 <p>
-                    NephroWise est aussi disponible pour le suivi des patients en insuffisance rénale chronique en stade IV et V et s’ins
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            nouveau forfait de prise en charge.
+                    NephroWise accompagne  le suivi des patients au stade 4 et 5 de la maladie rénale chronique. Le recueil de données automatisé garantit à votre établissement de toucher les nouveaux forfaits pathologie chronique - MRC pour tous vos patients.
                 </p>
             </div>
         </div>
@@ -113,7 +226,13 @@ Certains patients ont un état de santé fragile. Grâce à un suivi de la tensi
     </div>
 </div>
 
-{% include components/testimonials-no-photo %}
+<div class="bg--secondary">
+    {% include components/testimonial_static 
+        heading: "“L’application Nephrowise me rassure sur mon état de santé, sa création est vraiment un plus pour le suivi médical. En tant qu'ancien greffé, elle m'aurait enlevé tous les doutes lors de mes premières années, en attendant les rendez-vous avec le médecin, tous les trois mois.”",
+        author: "Un patient de l’Hôpital Foch",
+        image: "" %}
+</div>
+
 
 <section class="wrapper">
     <div class="flex justify--center align--center">
@@ -129,8 +248,8 @@ Certains patients ont un état de santé fragile. Grâce à un suivi de la tensi
         <div class="col-12 md__col-3 margin--bottom-6">
             <img alt="" class="block margin--x-auto margin--bottom-6" src="/assets/images/logos/resah.png">
         </div>
-        <div class="col-12 text--center">
-            <a class="button-secondary" href="/our-team/#partners">en savoir plus</a>
+        <div class="col-12 text--center margin--top-6">
+            <a class="button-secondary" href="/our-team/#partners">En savoir plus</a>
         </div>
     </div>
 </section>
@@ -140,10 +259,10 @@ Certains patients ont un état de santé fragile. Grâce à un suivi de la tensi
         <div class="grid grid-2-columns lg__grid-12-columns">
             <div class="text--center col-start-1 col-end-3 lg__text--left lg__col-start-2 lg__col-end-8">
                 <h2 class="md__text--2xl">Sécurité des données</h2>
-                <p>petit texte de présentation pour assurer aux gens que l'application est sécurisée et conforme</p>
+                <p>Les données de santé sont des données sensibles et strictement personnelles, Sêmeia met tout en oeuvre pour assurer un niveau maximal de sécurité, de confidentialité et de transparence.</p>
             </div>
             <div class="text--center col-start-1 col-end-3 row-start-3 lg__text--left lg__col-start-2 lg__col-end-8 lg__row-start-2">
-                <a class="button-secondary" href="/securite-des-donnes/">en savoir plus</a>
+                <a class="button-secondary" href="/securite-des-donnes/">En savoir plus</a>
             </div>
             <div class="text--right col-start-1 col-end-2 row-start-2 lg__col-start-8 lg__col-end-10 lg__row-start-1">
                 <img alt="" src="/assets/images/rgpd.png">
