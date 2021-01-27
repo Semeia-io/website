@@ -1,0 +1,78 @@
+---
+layout: base.html
+---
+
+<section class="product-page bg--primary lg__margin--bottom-25">
+    <div class="wrapper lg__padding--top-5">
+        <div class="flex">
+            <div class="col-12 flex justify--center align--center margin--bottom-5">
+                <span class="product__logo margin--right-3">
+                    {% include snippets/oncowise %}
+                </span>
+                <h1 class="body text--light text--xl lg__text--2xl">
+                    Onco<span class="regular">Wise</span>
+                </h1>
+            </div>
+
+            <div class="col-12 lg__col-10 lg__col-offset-1 relative app-preview__wrapper">
+                <img alt="app preview" class="app-preview shadow corners--rounded" src="/assets/images/app-preview.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="lg__padding--y-5"></div>
+
+
+<section class="wrapper">
+
+    <div class="col-12 lg__col-8 lg__col-offset-2 text--center margin--bottom-8 margin--top-8">
+        <h2 class="lg__text--2xl lg__margin--bottom-12">Qui utilise OncoWise ?</h2>
+        <p>
+            OncoWise est utilisé depuis fin 2020 pour accompagner le suivi quotidien des patients atteints de cancer du sein sous traitements anticancéreux oraux.
+        </p>
+    </div>
+</section>
+
+{% include components/product-features
+    title: "À quoi sert OncoWise ?",
+
+    description: "Une solution de télésurveillance médicale pour un suivi rapproché du patient et une meilleure maitrise de votre temps médical.",
+    
+    collect: "Régulièrement et automatiquement, nous collectons pour vous : 
+    <li class='margin--y-4'>Symptômes ressentis par les patients.</li>
+    <li class='margin--y-4'>Analyses biologiques en ville.</li>
+    <li class='margin--y-4'>Examens d’imagerie (IRM, mammographie).</li>
+    <li class='margin--y-4'>Tension et de poids (IoT).</li>
+    <li class='margin--y-4'>Historique des consultations.</li>
+    <li class='margin--y-4'>Examens réalisés.</li>
+    <li class='margin--y-4'>Délivrance des médicaments en ville.</li>",
+
+    visualize: "Vous pouvez, sur un tableau de bord unique, appréhender rapidement l’état de santé de votre patient, son plan de soins, l’évolution de ses constantes et de ses résultats de biologie et le déroulé de son parcours de soins.",
+    
+    warn: "Nous vous aidons à veiller sur vos patients en vous prévenant, selon les valeurs de référence définies avec vous :
+    <li class='margin--y-4'>Si des symptômes surviennent ou s’aggravent.</li>
+    <li class='margin--y-4'>Si le poids varie fortement.</li>
+    <li class='margin--y-4'>Si le patient rencontre des difficultés dans le suivi de son parcours de soins : arrêt de traitement, consultations non réalisées…</li>",
+    
+    predict: "Nous identifions pour vous, en utilisant des méthodes d’intelligence artificielle, les patients les plus à risque et les phases critiques du parcours :
+    <li class='margin--y-4'>Prédiction de l'observance et de la persistance.</li>
+    <li class='margin--y-4'>Risque de réhospitalisation.</li>",
+    
+    act: "Grâce à ces informations centralisées, vous pouvez facilement au cours, ou entre les consultations :
+    <li class='margin--y-4'>Adapter le traitement et les examens.</li>
+    <li class='margin--y-4'>Générer les prescriptions en un clic.</li>
+    <li class='margin--y-4'>Archiver les infos essentielles (résultats structurés et comptes rendus).",
+    
+    communicate: "Et vous disposez d’un canal unique d’échange avec vos patients pour : 
+    <li class='margin--y-4'>Partager ordonnances, comptes rendus…</li>
+    <li class='margin--y-4'>Centraliser et maîtriser les échanges via un chat simple et sécurisé.</li>
+    <li class='margin--y-4'>Organiser une téléconsultation.</li>
+    <li class='margin--y-4'>Participer à l'éducation sur sa pathologie.</li>"
+%}
+
+{% include components/cta heading: "Découvrez comment Sêmeia peut vous aider",
+link_url: "mailto:contact@semeia.io", link_text:"Nous contacter" %}
+
+{% include components/security-section %}
+

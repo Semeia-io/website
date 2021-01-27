@@ -1,0 +1,124 @@
+---
+layout: base.html
+---
+
+<section class="product-page bg--primary lg__margin--bottom-25">
+    <div class="wrapper lg__padding--top-5">
+        <div class="flex">
+            <div class="col-12 flex justify--center align--center margin--bottom-5">
+                <span class="product__logo margin--right-3">
+                    {% include snippets/mentalwise %}
+                </span>
+                <h1 class="body text--light text--xl lg__text--2xl">
+                    Mental<span class="regular">Wise</span>
+                </h1>
+            </div>
+
+            <div class="col-12 lg__col-10 lg__col-offset-1 relative app-preview__wrapper">
+                <img alt="app preview" class="app-preview shadow corners--rounded" src="/assets/images/app-preview.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="lg__padding--y-5"></div>
+
+<section class="wrapper">
+    <div class="grid grid-2-columns md__grid-12-columns">
+        <div class="col-start-1 col-end-3 md__col-end-13 margin--bottom-0">
+            <h2 class="lg__text--2xl text--center">Qui utilise MentalWise ?</h2>
+        </div>
+
+        <div class="col-start-1 col-end-3 md__col-end-13 lg__col-end-6 margin--top-8">
+            <p>
+                Mentalwise fait partie de l’expérimentation
+                <a href="https://solidarites-sante.gouv.fr/IMG/pdf/passport_bp_arr_t_.pdf" target="_blank">
+                    Article 51 - Parcours de soins pour les patients bipolaires (Passport BP)
+                </a>
+                portée par la Fondation Fondamental. 
+            </p>
+            <p>
+                Il est utilisé depuis 2020 par 5 établissements expert (CHU de Clermont-Ferrand, CHU de Besançon, CH Le Vinatier, CH Moulins-Yzeure et Hôpitaux Universitaires Henri Mondor AP-HP) pour assurer le suivi de 2000 patients atteintes de troubles bipolaires.
+            </p>
+            <p>
+                En 2021, MentalWise s'étend au suivi des patients souffrant de dépression.
+            </p>
+        </div>
+
+        <div class="col-start-1 col-end-3 md__col-end-13 lg__col-start-7 lg__col-end-13 lg__row-start-2">
+            <div class="flex justify--center align--center">
+                <img
+                    alt=""
+                    class="margin--bottom-2 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/moulins.png"
+                />
+                <img
+                    alt=""
+                    class="margin--bottom-2 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/vinatier.png"
+                />
+                <img
+                    alt=""
+                    class="margin--bottom-2 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/huhm.png"
+                />
+                <img
+                    alt=""
+                    class="margin--bottom-2 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/clermont.png"
+                />
+                <img
+                    alt=""
+                    class="margin--bottom-2 margin--x-6 md__margin--x-8"
+                    src="/assets/images/logos/chru.png"
+                />
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include components/product-features
+    title: "À quoi sert MentalWise ?",
+
+    description: "Une solution de télésurveillance médicale pour un suivi rapproché, intégré et complet (psychiatrique et somatique) des patients par les psychiatres et les case managers.",
+    
+    collect: "Régulièrement et automatiquement, nous collectons pour vous : 
+
+    <li class='margin--y-4'>Ressentis du patient (anxiété, humeur, énergie, sommeil, irritabilité).</li>
+    <li class='margin--y-4'>Survenue de nouveaux épisodes thymiques.</li>
+    <li class='margin--y-4'>Echelles de suivi clinique.</li>
+    <li class='margin--y-4'>Données d’activité des smartphones.</li>
+    <li class='margin--y-4'>Historique des consultations.</li>
+    <li class='margin--y-4'>Examens réalisés.</li>
+    <li class='margin--y-4'>Délivrance des médicaments en ville.</li>",
+    
+    visualize: "Vous pouvez, sur un tableau de bord unique, appréhender rapidement l’état de santé psychique et somatique de votre patient, son plan de soins, l’évolution de son ressenti et de ses données d’activité et le déroulé de son parcours de soins.",
+    
+    warn: "Nous vous aidons à veiller sur vos patients en vous prévenant précocement d'une dégradation de l'état de santé psychique ou somatique du patient, selon les valeurs de référence définies avec vous :
+    <li class='margin--y-4'>Si le poids varie fortement.</li>
+    <li class='margin--y-4'>Si le ressenti du patient décroche.</li>
+    <li class='margin--y-4'>Si le patient rencontre des difficultés dans le suivi de son parcours de soins : arrêt de traitement, consultations non réalisées…</li>",
+    
+    predict: "Nous identifions pour vous, en utilisant des méthodes d’intelligence artificielle, les patients les plus à risque et les phases critiques du parcours :
+    <li class='margin--y-4'>Survenue de phase maniaque ou dépressive.</li>
+    <li class='margin--y-4'>Risque d'arrêt de traitement.</li>
+    <li class='margin--y-4'>Risque d'hospitalisation.</li>",
+    
+    act: "Grâce à ces informations centralisées, vous pouvez facilement au cours, ou entre les consultations :
+    <li class='margin--y-4'>Ajuster avec le patient son plan de soins et l'accompagner dans le suivi de ses objectifs.</li>
+    <li class='margin--y-4'>Archiver les infos essentielles (résultats structurés, questionnaires de ressenti patients et comptes rendus).</li>",
+    
+    communicate: "Et vous disposez d’un canal unique d’échange avec vos patients pour :
+    <li class='margin--y-4'>Le sensibiliser à son plan de soins et l’engager activement dans son suivi.</li>
+    <li class='margin--y-4'>Partager ordonnances, comptes rendus…</li>
+    <li class='margin--y-4'>Centraliser et maîtriser les échanges via un chat simple et sécurisé.</li>
+    <li class='margin--y-4'>Organiser une téléconsultation.</li>
+    <li class='margin--y-4'>Participer à l'éducation sur sa pathologie.</li>"
+%}
+
+{% include components/cta heading: "Découvrez comment Sêmeia peut vous aider",
+link_url: "mailto:contact@semeia.io", link_text:"Nous contacter" %}
+
+{% include components/security-section %}
+
