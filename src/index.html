@@ -9,19 +9,15 @@ layout: base.html
                 <h1
                     class="text--light text--center text--xl lg__text--3xl margin--bottom-7 lg__margin--bottom-12"
                 >
-                    Enfin une solution de télésuivi des patients simple,
-                    intuitive et efficace.
+                    Enfin une solution de télésuivi des patients
+                    simple,&nbsp;intuitive et efficace.
                 </h1>
             </div>
             <div class="col-12 lg__col-10 relative image-iframe__wrapper margin--bottom-5">
-                <iframe src="https://player.vimeo.com/video/502233260" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <!-- <img
-                    alt="app preview"
-                    class="shadow corners--rounded"
-                    src="/assets/images/app-preview.png"
-                />
-                <a class="button-primary shadow demo-button" href=""
-                    >Cliquez pour essayer</a> -->
+                <div class="video-wrapper shadow corners--rounded">
+                    <iframe class="corners--rounded"
+                    src="https://player.vimeo.com/video/502233260?quality=1080p" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
             <div
                 class="col-12 lg__col-2 flex justify--center lg__justify--start lg__align--center lg__align-content--end"
@@ -30,26 +26,26 @@ layout: base.html
                     <li>
                         <a class="text--light" href="/produits/nephrowise/">
                             <span class="hidden md__block">
-                                {% include snippets/mentalwise %}
-                            </span>
-                            <span class="semibold">Mental</span>Wise</a>
-                    </li>
-                    <li>
-                        <a class="text--light" href="/produits/nephrowise/">
-                            <span class="hidden md__block">
                                 {% include snippets/nephrowise %}
                             </span>
                             <span class="semibold">Nephro</span>Wise</a>
                     </li>
                     <li>
-                        <a class="text--light" href="/produits/nephrowise/">
+                        <a class="text--light" href="/produits/mentalwise/">
+                            <span class="hidden md__block">
+                                {% include snippets/mentalwise %}
+                            </span>
+                            <span class="semibold">Mental</span>Wise</a>
+                    </li>
+                    <li>
+                        <a class="text--light" href="/produits/oncowise/">
                             <span class="hidden md__block">
                                 {% include snippets/oncowise %}
                             </span>
                             <span class="semibold">Onco</span>Wise</a>
                     </li>
                     <li>
-                        <a class="text--light temporary-disable-hover-effect" href="#">
+                        <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
                                 {% include snippets/cardiowise %}
                             </span>
@@ -58,21 +54,21 @@ layout: base.html
                 </ul>
                 <ul class="margin--x-2">
                     <li>
-                        <a class="text--light temporary-disable-hover-effect" href="#">
+                        <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
                                 {% include snippets/immunowise %}
                             </span>
                             <span class="semibold">Immuno</span>Wise</a>
                     </li>
                     <li>
-                        <a class="text--light temporary-disable-hover-effect" href="#">
+                        <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
                                 {% include snippets/pneumowise %}
                             </span>
                             <span class="semibold">Pneumo</span>Wise</a>
                     </li>
                     <li>
-                        <a class="text--light temporary-disable-hover-effect" href="/produits/nephrowise/">
+                        <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
                                 {% include snippets/surgerywise %}
                             </span>
@@ -148,13 +144,12 @@ layout: base.html
 
 {% include components/home-advantages %}
 
-
-<section class="bg--light home-advantages">
+<section class="bg--light">
     <div class="wrapper">
-        <h2 class="text--center lg__margin--bottom-15">Comment ça marche ?</h2>
+        <h2 class="text--center lg__margin--bottom-15 lg__margin--top-2">Comment ça marche ?</h2>
 
         <!-- first section -->
-        <div class="flex align--start margin--bottom-15 lg__margin--bottom-25">
+        <div class="flex align--start margin--bottom-15">
             <img
                 class="col-10 col-offset-1 lg__col-4 lg__col-offset-0 margin--bottom-10"
                 src="/assets/images/comment-ca-marche-1.png"
@@ -162,9 +157,8 @@ layout: base.html
             />
             <div class="col-12 lg__col-8 no-padding">
                 <h2 class="lg__text--2xl col-12 margin--bottom-5">
-                    Sêmeia récupère les données du patient
+                    Sêmeia récupère automatiquement les données du patient
                 </h2>
-                <h3 class="text--md text--primary col-12">Automatiquement</h3>
                 <div class="flex margin--bottom-10">
                     <div class="col-6 lg__col-3 margin--bottom-4">
                         <div
@@ -172,7 +166,7 @@ layout: base.html
                         >
                             {% include snippets/DMP %}
                             <p class="text--sm margin--bottom-0 margin--top-3">
-                                Données de parcours (achat de médicaments,
+                                Données de parcours (achats médicaments,
                                 réalisation d’actes...)
                             </p>
                         </div>
@@ -211,66 +205,14 @@ layout: base.html
                                 Tension, poids...
                             </p>
                         </div>
-                    <!-- <div class="col-6 lg__col-3 margin--bottom-4">
-                        <div
-                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
-                        >
-                            {% include snippets/Watch %}
-                            <p class="text--sm margin--bottom-0 margin--top-3">
-                                Données issus d’objets connectés
-                            </p>
-                        </div>
-                    </div> -->
+                    </div>
                 </div>
-                <!-- <h3 class="text--md text--secondary col-12">
-                    Saisit par le patient dans l’appli mobile
-                </h3>
-                <div class="flex">
-                    <div class="col-6 lg__col-3 margin--bottom-4">
-                        <div
-                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
-                        >
-                            {% include snippets/Tension %}
-                            <p
-                                class="width--full text--sm margin--bottom-0 margin--top-3"
-                            >
-                                Tension
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 lg__col-3 margin--bottom-4">
-                        <div
-                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
-                        >
-                            {% include snippets/Poids %}
-                            <p
-                                class="width--full text--sm margin--bottom-0 margin--top-3"
-                            >
-                                Poids
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 lg__col-3 margin--bottom-4">
-                        <div
-                            class="height--full bg--white corners--rounded flex--column justify--between align--center padding--x-3 padding--top-6 padding--bottom-3"
-                        >
-                            {% include snippets/Temperature %}
-                            <p
-                                class="width--full text--sm margin--bottom-0 margin--top-3"
-                            >
-                                Température
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
         <!-- second section -->
         <div
-            class="flex--reverse align--start margin--bottom-15 lg__margin--bottom-25"
+            class="flex--reverse align--start margin--bottom-15"
         >
             <img
                 class="col-10 col-offset-1 lg__col-6 lg__col-offset-0 margin--bottom-10"
@@ -307,7 +249,7 @@ layout: base.html
             </div>
         </div>
         <!-- third section -->
-        <div class="flex align--start margin--bottom-15 lg__margin--bottom-25">
+        <div class="flex align--start margin--bottom-12">
             <img
                 class="col-10 col-offset-1 lg__col-4 lg__col-offset-0 margin--bottom-10"
                 src="/assets/images/comment-ca-marche-3.png"
@@ -368,7 +310,7 @@ layout: base.html
                 </div>
             </div>
         </div>
-        <span class="block margin--x-auto text--center margin--top-15">
+        <span class="block margin--x-auto text--center margin--bottom-12">
             <a class="button-secondary" href="/comment">En savoir plus</a>
         </span>
     </div>
@@ -383,17 +325,19 @@ layout: base.html
                 class="col-start-1 col-end-3 lg__col-end-9 lg__row-start-1 lg__row-end-3"
             >
                 <div
-                    class="bg--white radius-extra-br padding--x-3 lg__padding--x-15 padding--y-6 lg__padding--y-20"
+                    class="bg--white radius-extra-br padding--x-3 lg__padding--x-15 padding--y-6 lg__padding--y-12"
                 >
-                    <h2 class="text--center lg__text--left">
+                    <h2 class="text--center lg__text--left margin--bottom-6">
                         Sécurité des données
                     </h2>
                     <p>
-                        petit texte de présentation pour assurer aux gens que
-                        l'application est sécurisée et conforme
+                        Toutes les données sont stockées sur des serveurs sécurisés et l’ensemble des traitements réalisés par nos data scientists sont enregistrés en video et stockés pour garantir une transparence et traçabilité totales.
+                    </p>
+                    <p>
+                        Les serveurs de Sêmeia ont été agréés par la CNIL et sont habilités à recevoir les données issues de l’Assurance Maladie.
                     </p>
 
-                    <a class="button-secondary" href="/securite-des-donnes/">En savoir plus</a>
+                    <a class="button-secondary margin--top-4" href="/securite-des-donnes/">En savoir plus</a>
                 </div>
             </div>
             <img
@@ -419,7 +363,7 @@ layout: base.html
             class="col-8 col-offset-2 xl__col-10 xl__col-offset-1 flex justify--center"
         >
             <a
-                href="/produits/nephrowise/"
+                href="/produits/mentalwise/"
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
             >
                 {% include snippets/mentalwise %}
@@ -437,11 +381,14 @@ layout: base.html
                 <h3 class="body text--primary text--lg regular">
                     <span class="semibold">Nephro</span>Wise
                 </h3>
-                <p class="text--sm">Suivi de greffe Insuffisance rénale stade IV & V</p>
+                <p class="text--sm">
+                    Suivi de greffe
+                    <br />Insuffisance rénale stade IV & V
+                </p>
             </a>
 
             <a
-                href="/produits/nephrowise/"
+                href="/produits/oncowise/"
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
             >
                 {% include snippets/oncowise %}
@@ -451,35 +398,39 @@ layout: base.html
                 <p class="text--sm">
                     Cancer du sein 
                     <br />Cancer de la prostate 
-                    <br />Patients métastatiques
-                    Hématologie
+                    <br />Hématologie
                 </p>
             </a>
 
             <a
-                href="#"
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
             >
                 {% include snippets/cardiowise %}
                 <h3 class="body text--primary text--lg regular">
                     <span class="semibold">Cardio</span>Wise
                 </h3>
-                <p class="text--sm">Insuffisance cardiaque Diabète / HTA AVC</p>
+                <p class="text--sm">
+                    Insuffisance cardiaque
+                    <br />Diabète / HTA
+                    <br />AVC
+                </p>
             </a>
 
             <a
-                href="#"
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
             >
                 {% include snippets/pneumowise %}
                 <h3 class="body text--primary text--lg regular">
                     <span class="semibold">Pneumo</span>Wise
                 </h3>
-                <p class="text--sm">Apnée du sommeil BPCO Asthme</p>
+                <p class="text--sm">
+                    Apnée du sommeil
+                    <br />BPCO
+                    <br />Asthme
+                </p>
             </a>
 
             <a
-                href="#"
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
             >
                 {% include snippets/immunowise %}
@@ -490,7 +441,6 @@ layout: base.html
             </a>
 
             <a
-                href="#"
                 class="block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3 corners--rounded"
             >
                 {% include snippets/surgerywise %}
@@ -506,7 +456,8 @@ layout: base.html
 
 <section class="testimonials">
     {% include components/testimonial_static 
-    heading: "“C’est très simple, ça prend peu de temps et ça rend beaucoup de services au médecin et au patient, ce qui est l’essentiel bien sûr.”",
+    heading: "“NephroWise permet une gestion du patient en ambulatoire en gardant un œil sur l’évolution de sa santé à domicile.
+    Certains patients ont un état de santé fragile. Grâce à un suivi de la tension et du poids, il devient possible d’éviter des hospitalisations parfois dramatiques.”",
     author: "Dr Jérôme Olagne - CHU Strasbourg",
     image: "/assets/images/photo_jo.png" %}
 </section>
