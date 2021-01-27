@@ -16,7 +16,6 @@ layout: base.html
 
             <div class="col-12 lg__col-10 lg__col-offset-1 relative app-preview__wrapper">
                 <img alt="app preview" class="app-preview shadow corners--rounded" src="/assets/images/app-preview.png"/>
-                <a class="button-primary shadow demo-button hidden lg__block" href="">Cliquez pour essayer</a>
             </div>
         </div>
     </div>
@@ -80,122 +79,36 @@ layout: base.html
         image: "/assets/images/photo_jo.png" %}
 </div>
 
-<section class="bg--light">
-    <div class="wrapper">
-        <div class="flex">
-            <div class="col-12 lg__col-8 lg__col-offset-2 text--center margin--bottom-12 margin--top-8">
-                <h2 class="text--xl text--center margin--bottom-8">À quoi sert NephroWise ?</h2>
-                <p>
-                    Ne cherchez plus les informations de vos patients : nous assurons la collecte, le regroupement, la supervision des données et la prédiction des risques. Consacrez votre temps à vos patients.
-                </p>
-            </div>
 
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/collect.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Collecter automatiquement
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Régulièrement et automatiquement, nous collectons pour vous : 
+{% include components/product-features
+    title: "À quoi sert NephroWise ?",
 
-                        <li class="margin--y-4">Analyses biologiques en ville</li>
-                        <li class="margin--y-4">Tension et de poids (IoT)</li>
-                        <li class="margin--y-4">Historique des consultations</li>
-                        <li class="margin--y-4">Examens réalisés</li>
-                        <li class="margin--y-4">Délivrance des médicaments en ville</li>
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/visualize.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Visualiser en un clin d'œil
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Vous pouvez, sur un tableau de bord unique, appréhender rapidement l’état de santé de votre patient, son plan de soins, l’évolution de ses constantes et de ses résultats de biologie et le déroulé de son parcours de soins.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/warn.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Vous avertir
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nos algorithmes marqués CE, configurés avec vos seuils, effectuent un premier contrôle pour vous prévenir en cas d'anomalies, sans vous noyer sous les alertes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/predict.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Prédire
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nos modèles d'IA vous aident à identifier précocément les risques dans le parcours de soins du patient pour mieux les prévenir : observance, hospitalisations, perte de greffon…
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/act.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Agir
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Grâce à ces informations centralisées, vous pouvez facilement au cours, ou entre les consultations :
-                        <li class="margin--y-4">Adapter le traitement et les examens.</li>
-                        <li class="margin--y-4">Générer les prescriptions en un clic.</li>
-                        <li class="margin--y-4">Archiver les infos essentielles sur le patient (résultats structurés et comptes rendus).</li>
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-18">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/communicate.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Communiquer
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Et vous disposez d’un canal unique d’échange avec vos patients pour : 
-                        <li class="margin--y-4">Partager ordonnances, comptes rendus…</li>
-                        <li class="margin--y-4">Centraliser et maîtriser les échanges via un chat simple et sécurisé.</li>
-                        <li class="margin--y-4">Organiser une téléconsultation.</li>
-                        <li class="margin--y-4">Participer à l'éducation sur sa pathologie.</li>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+    description: "Ne cherchez plus les informations de vos patients : nous assurons la collecte, le regroupement, la supervision des données et la prédiction des risques. Consacrez votre temps à vos patients.",
+    
+    collect: "Régulièrement et automatiquement, nous collectons pour vous : 
+    <li class='margin--y-4'>Analyses biologiques en ville</li>
+    <li class='margin--y-4'>Tension et de poids (IoT)</li>
+    <li class='margin--y-4'>Historique des consultations</li>
+    <li class='margin--y-4'>Examens réalisés</li>
+    <li class='margin--y-4'>Délivrance des médicaments en ville</li>",
+    
+    visualize: "Vous pouvez, sur un tableau de bord unique, appréhender rapidement l’état de santé de votre patient, son plan de soins, l’évolution de ses constantes et de ses résultats de biologie et le déroulé de son parcours de soins.",
+    
+    warn: "Nos algorithmes marqués CE, configurés avec vos seuils, effectuent un premier contrôle pour vous prévenir en cas d'anomalies, sans vous noyer sous les alertes.",
+    
+    predict: "Nos modèles d'IA vous aident à identifier précocément les risques dans le parcours de soins du patient pour mieux les prévenir : observance, hospitalisations, perte de greffon…",
+    
+    act: "Grâce à ces informations centralisées, vous pouvez facilement au cours, ou entre les consultations :
+    <li class='margin--y-4'>Adapter le traitement et les examens.</li>
+    <li class='margin--y-4'>Générer les prescriptions en un clic.</li>
+    <li class='margin--y-4'>Archiver les infos essentielles (résultats structurés et comptes rendus).</li>",
+    
+    communicate: "Et vous disposez d’un canal unique d’échange avec vos patients pour : 
+    <li class='margin--y-4'>Partager ordonnances, comptes rendus…</li>
+    <li class='margin--y-4'>Centraliser et maîtriser les échanges via un chat simple et sécurisé.</li>
+    <li class='margin--y-4'>Organiser une téléconsultation.</li>
+    <li class='margin--y-4'>Participer à l'éducation sur sa pathologie.</li>"
+%}
 
 <div class="home-advantages">
     <div class="wrapper padding--bottom-0">
@@ -254,25 +167,7 @@ layout: base.html
     </div>
 </section>
 
-<section class="bg--light">
-    <div class="wrapper">
-        <div class="grid grid-2-columns lg__grid-12-columns">
-            <div class="text--center col-start-1 col-end-3 lg__text--left lg__col-start-2 lg__col-end-8">
-                <h2 class="md__text--2xl">Sécurité des données</h2>
-                <p>Les données de santé sont des données sensibles et strictement personnelles, Sêmeia met tout en oeuvre pour assurer un niveau maximal de sécurité, de confidentialité et de transparence.</p>
-            </div>
-            <div class="text--center col-start-1 col-end-3 row-start-3 lg__text--left lg__col-start-2 lg__col-end-8 lg__row-start-2">
-                <a class="button-secondary" href="/securite-des-donnes/">En savoir plus</a>
-            </div>
-            <div class="text--right col-start-1 col-end-2 row-start-2 lg__col-start-8 lg__col-end-10 lg__row-start-1">
-                <img alt="" src="/assets/images/rgpd.png">
-            </div>
-            <div class="text--left col-start-2 col-end-3 row-start-2 lg__col-start-10 lg__col-end-12 lg__row-start-1">
-                <img alt="" src="/assets/images/iso.png">
-            </div>
-        </div>
-    </div>
-</section>
+{% include components/security-section %}
 
 {% include components/cta heading: "Découvrez comment Sêmeia peut vous aider",
 link_url: "mailto:contact@semeia.io", link_text:"Nous contacter" %}

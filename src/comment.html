@@ -76,109 +76,22 @@ layout: base.html
     </div>
 </section>
 
-<section class="bg--light">
-    <div class="wrapper">
-        <div class="flex">
-            <div class="col-12 lg__col-8 lg__col-offset-2 text--center margin--bottom-12 margin--top-8">
-                <h2 class="lg__text--2xl lg__margin--bottom-6">Fonctionnalités</h2>
-                <p>
-                    Ne cherchez plus les informations de vos patients : nous assurons la collecte, le regroupement, la supervision des données et la prédiction des risques. Consacrez votre temps à vos patients.
-                </p>
-            </div>
+{% include components/product-features
+    title: "Fonctionnalités",
 
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/collect.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Collecter automatiquement
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nous collectons automatiquement les constantes vitales, les résultats de biologie (ville et hôpital), les symptômes et ressentis patients, l'historique des actes réalisés…
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/visualize.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Visualiser en un clin d'œil
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nous trions, regroupons et structurons les données collectées en un seul endroit pour en extraire l'information pertinente pour le suivi.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/warn.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Vous avertir
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nos algorithmes marqués CE, configurés avec vos seuils, effectuent un premier contrôle pour vous prévenir en cas d'anomalies, sans vous noyer sous les alertes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/predict.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Prédire
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Nos modèles d'IA vous aident à identifier précocément les risques dans le parcours de soins du patient pour mieux les prévenir : observance, hospitalisations, perte de greffon…
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex align--end margin--bottom-12 lg__margin--bottom-25">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/act.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Agir
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Vous ajustez le plan de soins, créez et partagez les ordonnances et les comptes rendus de consultations avec le patient et son entourage de soins.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex--reverse align--end margin--bottom-12 lg__margin--bottom-18">
-                <div class="col-12 lg__col-6 lg__col-offset-1 margin--bottom-12 lg__margin--bottom-0">
-                    <img alt="" src="/assets/images/comment/communicate.png"/>
-                </div>
-                <div class="col-12 lg__col-4">
-                    <h3 class="text--lg lg__text--2xl">
-                        Communiquer
-                    </h3>
-                    <hr class="margin--y-7"/>
-                    <p>
-                        Organisez et simplifiez les échanges avec vos patients : discussions chat, partage de documents médicaux et téléconsultation. Ce canal unique favorise la répartition des échanges au sein de l'équipe médicale.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+    description: "Ne cherchez plus les informations de vos patients : nous assurons la collecte, le regroupement, la supervision des données et la prédiction des risques. Consacrez votre temps à vos patients.",
+    
+    collect: "Nous collectons automatiquement les constantes vitales, les résultats de biologie (ville et hôpital), les symptômes et ressentis patients, l'historique des actes réalisés…",
+    
+    visualize: "Nous trions, regroupons et structurons les données collectées en un seul endroit pour en extraire l'information pertinente pour le suivi.",
+    
+    warn: "Nos algorithmes marqués CE, configurés avec vos seuils, effectuent un premier contrôle pour vous prévenir en cas d'anomalies, sans vous noyer sous les alertes.",
+    
+    predict: "Nos modèles d'IA vous aident à identifier précocément les risques dans le parcours de soins du patient pour mieux les prévenir : observance, hospitalisations, perte de greffon…",
+    
+    act: "Vous ajustez le plan de soins, créez et partagez les ordonnances et les comptes rendus de consultations avec le patient et son entourage de soins.",
+    
+    communicate: "Organisez et simplifiez les échanges avec vos patients : discussions chat, partage de documents médicaux et téléconsultation. Ce canal unique favorise la répartition des échanges au sein de l'équipe médicale." %}
 
 {% include components/cta heading: "Découvrez comment Sêmeia peut vous aider",
 link_url: "mailto:contact@semeia.io", link_text:"Nous contacter" %}
