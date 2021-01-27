@@ -13,9 +13,10 @@ button {
 .button-secondary {
 	position: relative;
 	min-width: auto;
-	padding: 0 $grid_unit * 7;
+    padding: 0 $grid_unit * 7;
+    padding-right: $grid_unit * 7 + 12px;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #858181;
 	border: none;
 
 	&:after {
@@ -23,7 +24,7 @@ button {
 		display: block;
 		width: 24px;
 		height: 57px;
-		position: absolute;
+        position: absolute;
 		top: 0;
 		right: 0;
 		background: url("/assets/svgs/chevron-right.svg");
@@ -34,7 +35,7 @@ button {
 
 .button-tertiary {
     @extend .button-secondary; 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #858181;
     border: none;
 
     &:hover {
