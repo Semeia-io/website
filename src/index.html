@@ -67,13 +67,6 @@ layout: base.html
                             </span>
                             <span class="semibold">Pneumo</span>Wise</a>
                     </li>
-                    <li>
-                        <a class="text--light temporary-disable-hover-effect">
-                            <span class="hidden md__block">
-                                {% include snippets/surgerywise %}
-                            </span>
-                            <span class="semibold">Surgery</span>Wise</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -266,7 +259,7 @@ layout: base.html
                         >
                             {% include snippets/Ordonnonce %}
                             <p class="text--sm margin--bottom-0 margin--top-3">
-                                Le médecin adapte le plan de soins
+                                Adaptation du plan de soins par le médecin
                             </p>
                         </div>
                     </div>
@@ -277,7 +270,7 @@ layout: base.html
                         >
                             {% include snippets/communiquer %}
                             <p class="text--sm margin--bottom-0 margin--top-3">
-                                Contact directs et sécurisés par chat, hors situation d’urgence
+                                Contacts directs et sécurisés par chat, hors situation d’urgence
                             </p>
                         </div>
                     </div>
@@ -363,19 +356,8 @@ layout: base.html
             class="col-8 col-offset-2 xl__col-10 xl__col-offset-1 flex justify--center"
         >
             <a
-                href="/produits/mentalwise/"
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
-            >
-                {% include snippets/mentalwise %}
-                <h3 class="body text--primary text--lg regular">
-                    <span class="semibold">Mental</span>Wise
-                </h3>
-                <p class="text--sm">Bipolaires Dépression Schizophrénie</p>
-            </a>
-
-            <a
                 href="/produits/nephrowise/"
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
                 {% include snippets/nephrowise %}
                 <h3 class="body text--primary text--lg regular">
@@ -388,8 +370,19 @@ layout: base.html
             </a>
 
             <a
+                href="/produits/mentalwise/"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
+            >
+                {% include snippets/mentalwise %}
+                <h3 class="body text--primary text--lg regular">
+                    <span class="semibold">Mental</span>Wise
+                </h3>
+                <p class="text--sm">Bipolaires Dépression Schizophrénie</p>
+            </a>
+
+            <a
                 href="/produits/oncowise/"
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
                 {% include snippets/oncowise %}
                 <h3 class="body text--primary text--lg regular">
@@ -403,7 +396,7 @@ layout: base.html
             </a>
 
             <a
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
                 {% include snippets/cardiowise %}
                 <h3 class="body text--primary text--lg regular">
@@ -417,7 +410,7 @@ layout: base.html
             </a>
 
             <a
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
                 {% include snippets/pneumowise %}
                 <h3 class="body text--primary text--lg regular">
@@ -431,23 +424,13 @@ layout: base.html
             </a>
 
             <a
-                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3"
+                class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
                 {% include snippets/immunowise %}
                 <h3 class="body text--primary text--lg regular">
                     <span class="semibold">Immuno</span>Wise
                 </h3>
                 <p class="text--sm">Polyarthrite rhumatoïde</p>
-            </a>
-
-            <a
-                class="block text--center padding--x-3 padding--y-6 md__col-6 lg__col-4 xl__col-3 corners--rounded"
-            >
-                {% include snippets/surgerywise %}
-                <h3 class="body text--primary text--lg regular">
-                    <span class="semibold">Surgery</span>Wise
-                </h3>
-                <p class="text--sm">Chirurgie orthopédique</p>
             </a>
         </div>
     </div>
