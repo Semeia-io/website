@@ -12,14 +12,23 @@
               class="testimonail__image"
               src="{{ image }}"
             />
-            <p class="testimonial__author">{{ author }}</p>
+            <p class="testimonial__author"
+            >
+              {{ author }}
+            </p>
           </div>
 
           <div class="large-devices relative static">
             <p class="testimonial__text">
               {{ heading }}
             </p>
-            <p class="testimonial__author">{{ author }}</p>
+            <p class="testimonial__author"
+              {% if white %}
+                style="color: white;"
+              {% endif %}
+            >
+              {{ author }}
+            </p>
             <img
               alt=""
               class="testimonail__image"
