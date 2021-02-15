@@ -1,42 +1,6 @@
 <div class="wrapper">
-
-      <div class="zen-carousel__track">
-
-        <div class="slide">
-          <div class="small-devices">
-            <p class="testimonial__text">
-              {{ heading }}
-            </p>
-            <img
-              alt=""
-              class="testimonail__image"
-              src="{{ image }}"
-            />
-            <p class="testimonial__author"
-            >
-              {{ author }}
-            </p>
-          </div>
-
-          <div class="large-devices relative static">
-            <p class="testimonial__text">
-              {{ heading }}
-            </p>
-            <p class="testimonial__author"
-              {% if white %}
-                style="color: white;"
-              {% endif %}
-            >
-              {{ author }}
-            </p>
-            <img
-              alt=""
-              class="testimonail__image"
-              src="{{ image }}"
-            />
-          </div>
-        </div>
-      </div>
-
+  <div class="testimonial">
+    <p class="testimonial__text">{{ heading }}</p>
+    <p class="testimonial__author">{{ author }}</p>
   </div>
 </div>

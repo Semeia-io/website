@@ -65,6 +65,29 @@
   }
 }
 
+.testimonial {
+  .testimonial__text {
+    @extend .text--xl;
+  }
+
+  .testimonial__author {
+    @extend .text--center;
+    @extend .text--secondary;
+  }
+}
+
+@media screen and (min-width: $md_device) {
+  .testimonial .testimonial__text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    color: $neutral_color_extra_dark;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px 5px 80px 5px;
+  }
+}
+
 .small-devices {
   .testimonial__text {
     @extend .text--xl;
