@@ -1,5 +1,7 @@
 ---
 layout: base.html
+title: Sêmeia - Le télésuivi patient simple, intuitif et efficace
+description:
 ---
 
 <section class="home-hero">
@@ -49,23 +51,23 @@ layout: base.html
                             <span class="hidden md__block">
                                 {% include snippets/cardiowise %}
                             </span>
-                            <span class="semibold">Cardio</span>Wise</a>                  
+                            <span class="semibold">Cardio</span>Wise</a>
                     </li>
                 </ul>
                 <ul class="margin--x-2">
                     <li>
                         <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
-                                {% include snippets/immunowise %}
+                                {% include snippets/pneumowise %}
                             </span>
-                            <span class="semibold">Immuno</span>Wise</a>
+                            <span class="semibold">Pneumo</span>Wise</a>
                     </li>
                     <li>
                         <a class="text--light temporary-disable-hover-effect">
                             <span class="hidden md__block">
-                                {% include snippets/pneumowise %}
+                                {% include snippets/rhumatowise %}
                             </span>
-                            <span class="semibold">Pneumo</span>Wise</a>
+                            <span class="semibold">Rhumato</span>Wise</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +78,7 @@ layout: base.html
 <div class="spacer"></div>
 
 <section class="testimonials">
-    {% include components/testimonial_static 
+    {% include components/testimonial_static
         heading: "“C’est très simple, ça prend peu de temps et ça rend beaucoup de services au médecin et au patient, ce qui est l’essentiel bien sûr.”",
         author: "Dr Renaud Snanoudj - APHP",
         image: "" %}
@@ -87,47 +89,47 @@ layout: base.html
         <p class="text--center">Ils nous font confiance</p>
         <div class="flex justify--center align--center">
             <img
-                alt=""
+                alt="APHP"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/aphp.png"
             />
             <img
-                alt=""
+                alt="Hopitaux"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/hopitaux.png"
             />
             <img
-                alt=""
+                alt="FOCH"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/foch.png"
             />
             <img
-                alt=""
+                alt="hospitalier"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/hospitalier.png"
             />
             <img
-                alt=""
+                alt="Moulins"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/moulins.png"
             />
             <img
-                alt=""
+                alt="Vinatier"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/vinatier.png"
             />
             <img
-                alt=""
+                alt="CHRU"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/chru.png"
             />
             <img
-                alt=""
+                alt="HUHM"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/huhm.png"
             />
             <img
-                alt=""
+                alt="Clermont"
                 class="margin--y-4 margin--x-8 md__margin--x-8 xl__margin--x-8"
                 src="/assets/images/logos/clermont.png"
             />
@@ -146,7 +148,7 @@ layout: base.html
             <img
                 class="col-10 col-offset-1 lg__col-4 lg__col-offset-0 margin--bottom-10"
                 src="/assets/images/comment-ca-marche-1.png"
-                alt=""
+                alt="COmment Ca Marche"
             />
             <div class="col-12 lg__col-8 no-padding">
                 <h2 class="lg__text--2xl col-12 margin--bottom-5">
@@ -389,8 +391,8 @@ layout: base.html
                     <span class="semibold">Onco</span>Wise
                 </h3>
                 <p class="text--sm">
-                    Cancer du sein 
-                    <br />Cancer de la prostate 
+                    Cancer du sein
+                    <br />Cancer de la prostate
                     <br />Hématologie
                 </p>
             </a>
@@ -426,9 +428,9 @@ layout: base.html
             <a
                 class="corners--rounded block text--center padding--x-3 padding--y-6 md__col-6 lg__col-6 xl__col-4"
             >
-                {% include snippets/immunowise %}
+                {% include snippets/rhumatowise %}
                 <h3 class="body text--primary text--lg regular">
-                    <span class="semibold">Immuno</span>Wise
+                    <span class="semibold">Rhumato</span>Wise
                 </h3>
                 <p class="text--sm">Polyarthrite rhumatoïde</p>
             </a>
@@ -438,7 +440,7 @@ layout: base.html
 
 
 <section class="testimonials">
-    {% include components/testimonial_static 
+    {% include components/testimonial_static
     heading: "“NephroWise permet une gestion du patient en ambulatoire en gardant un œil sur l’évolution de sa santé à domicile.
     Certains patients ont un état de santé fragile. Grâce à un suivi de la tension et du poids, il devient possible d’éviter des hospitalisations.”",
     author: "Dr Jérôme Olagne - CHU Strasbourg",
