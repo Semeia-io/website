@@ -18,3 +18,5 @@ npm run build
 
 ## Wordpress Setup
 Once you have WP setup on a subdomain or somewhere, make sure to change the url in `src/data/posts.js` and `src/data/vacancies.js`
+
+## How to deploy
